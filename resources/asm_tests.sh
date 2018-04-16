@@ -21,13 +21,14 @@ compile_you()
 {
 	printf "$COLOR\0Compiling you...\n$END"
 
+    rm 2> /dev/null your_prog_log.txt
     if [ $(ls | grep asm) ]
     then
         rm -rf your_cor
         mkdir -p your_cor
         for file in s_files/*.s;
             do
-	            ./asm $file 2>&1
+	            ./asm $file >> your_asm_log.txt 2>&1 
             done
 
         for file in s_files/*.cor;
@@ -41,17 +42,15 @@ compile_you()
 
 make_a_difference()
 {
+    rm 2> /dev/null diff_log.txt
     if [ $(ls | grep your_cor) ]
     then
-    # if [ $(ls your_cor) ]
-    # then
+
 	printf "$COLOR\0Will you make a difference ?\n$END"
 
-    for file in your_cor/*.cor
-        do
-            diff $file ../zaz_cor/$file
-        done
-    # fi
+    diff -bur your_cor zaz_cor >> diff_log.txt
+    cat diff_log.txt
+
     fi
 }
 
