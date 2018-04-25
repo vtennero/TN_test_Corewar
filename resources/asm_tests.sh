@@ -1,23 +1,24 @@
 #!/bin/bash
 
-compile_zaz()
+asm_compile_zaz()
 {
 	printf "$COLOR\0Compiling Zaz...This will take some time...\n$END"
 
-    rm -rf zaz_cor
-    mkdir -p zaz_cor
-    for file in s_files/*.s;
+    rm -rf $ASM_dir/zaz_cor
+    mkdir -p $ASM_dir/zaz_cor
+    for file in $ASM_dir/s_files/*.s;
         do
-	        ./zaz $file 2>&1
+	        # ./$ASM_dir/zaz $file 2>&1
+	        ./$ASM_dir/zaz $file
         done
 
-    for file in s_files/*.cor;
+    for file in $ASM_dir/s_files/*.cor;
         do
-            mv $file zaz_cor/
+            mv $file $ASM_dir/zaz_cor/
         done
 }
 
-compile_you()
+asm_compile_you()
 {
 	printf "$COLOR\0Compiling you...\n$END"
 
@@ -40,7 +41,7 @@ compile_you()
     fi
 }
 
-make_a_difference()
+asm_make_a_difference()
 {
     rm 2> /dev/null diff_log.txt
     if [ $(ls | grep your_cor) ]
@@ -60,7 +61,7 @@ run_asm_tests()
 	printf "$COLOR\0TN_TEST // COREWAR\n$END"
 	printf "$COLOR\0ASM DIFF TESTS\n$END"
 	printf "$COLOR\0Disclaimer: this script only tests VALID players.\n$END"
-    # compile_zaz
-    compile_you
-    make_a_difference
+    asm_compile_zaz
+    asm_compile_you
+    asm_make_a_difference
 }
