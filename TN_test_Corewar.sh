@@ -8,7 +8,7 @@ VM_dir=VM_tests
 source resources/asm_tests.sh
 source resources/vm_tests.sh
 
-# sh resources/animation.sh
+sh resources/animation.sh
 
 clear
 echo "$COLOR\0TN_TEST // COREWAR\n$END"

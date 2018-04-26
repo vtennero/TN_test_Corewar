@@ -1,0 +1,4 @@
+Only in ASM_tests/zaz_cor: Misaka_Mikoto.cor
+Only in ASM_tests/zaz_cor: bee_gees.cor
+Binary files ASM_tests/your_cor/perso5.cor and ASM_tests/zaz_cor/perso5.cor differ
+Only in ASM_tests/zaz_cor: ultimate-surrender.cor
