@@ -68,8 +68,8 @@ run_asm_tests()
         asm_compile_you
         asm_make_a_difference
 	else
-		printf "$COLOR\0Move your corewar to the current folder, then restart.\n$END"
+		printf "$COLOR\0Move your corewar to the current folder, then restart (File must be named asm).\n$END"
 	fi
-	printf "$COLOR\0[ASM DIFF TESTS DONE]\n\n$END"
+	printf "$COLOR\0[ASM DIFF TESTS DONE]\n$END"
     read -p "Press enter to continue..."
 }
