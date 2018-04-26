@@ -947,3 +947,76 @@ Writing output program to ASM_tests/s_files/xor.cor
 Writing output program to ASM_tests/s_files/youforkmytralala.cor
 Writing output program to ASM_tests/s_files/zjmp.cor
 Writing output program to ASM_tests/s_files/zork.cor
+Writing output program to ASM_tests/s_files/Asombra.cor
+Writing output program to ASM_tests/s_files/Car.cor
+Writing output program to ASM_tests/s_files/Gagnant.cor
+Writing output program to ASM_tests/s_files/Kappa.cor
+Writing output program to ASM_tests/s_files/Machine-gun.cor
+Writing output program to ASM_tests/s_files/MarineKing.cor
+[1m[38;2;243;102;77merror[0;38;255;255;255m: [1m[38;2;255;255;255mline [38;2;85;218;89m7[0;38;255;255;255m : number argument has wrong format
+Writing output program to ASM_tests/s_files/Octobre_Rouge_V4.2.cor
+Writing output program to ASM_tests/s_files/Rainbow_dash.cor
+Writing output program to ASM_tests/s_files/THUNDER.cor
+Writing output program to ASM_tests/s_files/Varimathras.cor
+Writing output program to ASM_tests/s_files/Wall.cor
+Writing output program to ASM_tests/s_files/_.cor
+Writing output program to ASM_tests/s_files/_honeybadger.cor
+Writing output program to ASM_tests/s_files/add.cor
+Writing output program to ASM_tests/s_files/aff.cor
+Writing output program to ASM_tests/s_files/and.cor
+Writing output program to ASM_tests/s_files/barriere.cor
+[1m[38;2;243;102;77merror[0;38;255;255;255m: [1m[38;2;255;255;255mline [38;2;85;218;89m4[0;38;255;255;255m : number argument has wrong format
+Writing output program to ASM_tests/s_files/big_feet.cor
+Writing output program to ASM_tests/s_files/big_life.cor
+Writing output program to ASM_tests/s_files/bigzork.cor
+Writing output program to ASM_tests/s_files/casimir.cor
+Writing output program to ASM_tests/s_files/champ.cor
+Writing output program to ASM_tests/s_files/corelol.cor
+Writing output program to ASM_tests/s_files/darksasuke.cor
+Writing output program to ASM_tests/s_files/doge.cor
+Writing output program to ASM_tests/s_files/dubo.cor
+Writing output program to ASM_tests/s_files/ex.cor
+Writing output program to ASM_tests/s_files/fluttershy.cor
+Writing output program to ASM_tests/s_files/fork.cor
+Writing output program to ASM_tests/s_files/gedeon.cor
+Writing output program to ASM_tests/s_files/helltrain.cor
+[1m[38;2;243;102;77merror[0;38;255;255;255m: [1m[38;2;255;255;255mline [38;2;85;218;89m4[0;38;255;255;255m : number argument has wrong format
+Writing output program to ASM_tests/s_files/jinx.cor
+Writing output program to ASM_tests/s_files/jumper.cor
+Writing output program to ASM_tests/s_files/justin_bee.cor
+Writing output program to ASM_tests/s_files/ld.cor
+Writing output program to ASM_tests/s_files/ldi.cor
+[1m[38;2;243;102;77merror[0;38;255;255;255m: [1m[38;2;255;255;255mline [38;2;85;218;89m7[0;38;255;255;255m : label argument has wrong format
+Writing output program to ASM_tests/s_files/lfork.cor
+Writing output program to ASM_tests/s_files/littlepuppy.cor
+Writing output program to ASM_tests/s_files/live.cor
+Writing output program to ASM_tests/s_files/lld.cor
+Writing output program to ASM_tests/s_files/lldi.cor
+Writing output program to ASM_tests/s_files/loose.cor
+Writing output program to ASM_tests/s_files/mandragore.cor
+Writing output program to ASM_tests/s_files/maxidef.cor
+Writing output program to ASM_tests/s_files/meowluigi.cor
+Writing output program to ASM_tests/s_files/mortel.cor
+Writing output program to ASM_tests/s_files/or.cor
+Writing output program to ASM_tests/s_files/perso.cor
+Writing output program to ASM_tests/s_files/perso5.cor
+Writing output program to ASM_tests/s_files/salamahenagalabadoun.cor
+Writing output program to ASM_tests/s_files/sam_2.0.cor
+Writing output program to ASM_tests/s_files/seg.cor
+Writing output program to ASM_tests/s_files/skynet.cor
+Writing output program to ASM_tests/s_files/slider2.cor
+Writing output program to ASM_tests/s_files/st.cor
+Writing output program to ASM_tests/s_files/sti.cor
+[1m[38;2;243;102;77merror[0;38;255;255;255m: [1m[38;2;255;255;255mline [38;2;85;218;89m3[0;38;255;255;255m : instuction not found
+[1m[38;2;243;102;77merror[0;38;255;255;255m: [1m[38;2;255;255;255mline [38;2;85;218;89m3[0;38;255;255;255m : instuction not found
+[1m[38;2;243;102;77merror[0;38;255;255;255m: [1m[38;2;255;255;255mline [38;2;85;218;89m3[0;38;255;255;255m : instuction not found
+Writing output program to ASM_tests/s_files/terminator.cor
+Writing output program to ASM_tests/s_files/toto.cor
+Writing output program to ASM_tests/s_files/turtle.cor
+[1m[38;2;243;102;77merror[0;38;255;255;255m: [1m[38;2;255;255;255mline [38;2;85;218;89m426[0;38;255;255;255m : parameter number is wrong
+Writing output program to ASM_tests/s_files/valid.cor
+Writing output program to ASM_tests/s_files/while_fork.cor
+Writing output program to ASM_tests/s_files/xor.cor
+Writing output program to ASM_tests/s_files/youforkmytralala.cor
+Writing output program to ASM_tests/s_files/zjmp.cor
+Writing output program to ASM_tests/s_files/zork.cor

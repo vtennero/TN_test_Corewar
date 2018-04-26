@@ -124,7 +124,7 @@ run_vm_tests()
 {
     clear
 	printf "$COLOR\0TN_TEST // COREWAR\n$END"
-	printf "$COLOR\0VM TESTS\n$END"
+	printf "$COLOR\0VM TESTS\n\n$END"
 
 	if [ $(ls | grep corewar) ]
 	then
