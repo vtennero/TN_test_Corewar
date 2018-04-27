@@ -9,7 +9,7 @@ source resources/asm_tests.sh
 source resources/vm_tests.sh
 source resources/leaks_tests.sh
 
-# sh resources/animation.sh
+sh resources/animation.sh
 
 clear
 echo "$COLOR\0TN_TEST // COREWAR\n$END"
@@ -17,8 +17,8 @@ sleep 1
 
 cp ../corewar/vm corewar
 
-# run_asm_tests
-# run_vm_tests
+run_asm_tests
+run_vm_tests
 run_leaks_tests
 
 echo "$COLOR\0[ALL DONE]$END"
