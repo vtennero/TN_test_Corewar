@@ -1,0 +1,14 @@
+TEST[1]:	16 bytes definitely lost, 0 bytes indirectly lost
+TEST[2]:	16 bytes definitely lost, 0 bytes indirectly lost
+TEST[3]:	16 bytes definitely lost, 0 bytes indirectly lost
+TEST[8]:	48 bytes definitely lost, 2,206 bytes indirectly lost
+TEST[9]:	48 bytes definitely lost, 2,206 bytes indirectly lost
+TEST[10]:	48 bytes definitely lost, 2,206 bytes indirectly lost
+TEST[11]:	48 bytes definitely lost, 2,206 bytes indirectly lost
+TEST[12]:	48 bytes definitely lost, 2,206 bytes indirectly lost
+TEST[14]:	48 bytes definitely lost, 2,206 bytes indirectly lost
+TEST[18]:	48 bytes definitely lost, 4,460 bytes indirectly lost
+TEST[19]:	48 bytes definitely lost, 4,460 bytes indirectly lost
+TEST[20]:	48 bytes definitely lost, 4,460 bytes indirectly lost
+TEST[21]:	48 bytes definitely lost, 6,714 bytes indirectly lost
+TEST[22]:	48 bytes definitely lost, 8,968 bytes indirectly lost

@@ -1,0 +1,5 @@
+VM_tests/inner/too_small/too_small_1.cor:	48 bytes definitely lost, 0 bytes indirectly lost
+VM_tests/inner/too_small/too_small_2.cor:	48 bytes definitely lost, 0 bytes indirectly lost
+VM_tests/inner/too_small/too_small_3.cor:	48 bytes definitely lost, 0 bytes indirectly lost
+VM_tests/inner/too_small/too_small_4.cor:	48 bytes definitely lost, 0 bytes indirectly lost
+VM_tests/inner/too_small/too_small_5.cor:	48 bytes definitely lost, 0 bytes indirectly lost

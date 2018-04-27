@@ -3,13 +3,23 @@
 OUTER=$VM_dir/outer/tests_logs
 INNER=$VM_dir/inner/tests_logs
 
+DIFF_T=code_size_differs
+HEAD_T=invalid_header
+LARGE_T=too_large
+SMALL_T=too_small
+
+DIFF=$VM_dir/inner/$DIFF_T
+HEAD=$VM_dir/inner/$HEAD_T
+LARGE=$VM_dir/inner/$LARGE_T
+SMALL=$VM_dir/inner/$SMALL_T
+
 vm_compile_zaz()
 {
 	printf "$COLOR\0Compiling Zaz...This will take some time...\n$END"
 
     rm 2> /dev/null vm_log_zaz.txt
 
-    for file in $VM_dir/zaz_cor/*.cor;
+    for file in $VM_dir/valid_champions/*.cor;
         do
 			echo $file >> vm_log_zaz.txt
 	        ./$VM_dir/corzaz $file >> vm_log_zaz.txt 2>&1 
@@ -20,11 +30,6 @@ vm_compile_zaz()
 			pkill corzaz
 			echo "\n" >> vm_log_zaz.txt
         done
-
-    # for file in $VM_dir/s_files/*.cor;
-        # do
-            # mv $file $VM_dir/zaz_cor/
-        # done
 }
 
 outer_parsing_tests()
@@ -50,21 +55,29 @@ outer_parsing_tests()
 	local TEST[$((c++))]="50 5"
 	local TEST[$((c++))]="-n -dump"
 	
-	local TEST[$((c++))]="$VM_dir/zaz_cor/Car.cor -dump" 
-	local TEST[$((c++))]="$VM_dir/zaz_cor/Car.cor -n -dump" 
-	local TEST[$((c++))]="$VM_dir/zaz_cor/Car.cor -n dump" 
-	local TEST[$((c++))]="$VM_dir/zaz_cor/Car.cor -n 5" 
-	local TEST[$((c++))]="$VM_dir/zaz_cor/Car.cor -n sdfsd" 
-	local TEST[$((c++))]="-n abc $VM_dir/zaz_cor/Car.cor -n sdfsd" 
-	local TEST[$((c++))]="-n 1 $VM_dir/zaz_cor/Car.cor -n 1 sdfsd" 
-	local TEST[$((c++))]="-n 1 -dump $VM_dir/zaz_cor/Car.cor -n 1 sdfsd" 
-	local TEST[$((c++))]="-n 1 -dump a $VM_dir/zaz_cor/Car.cor -n 1 sdfsd" 
-	local TEST[$((c++))]="-n -99991 $VM_dir/zaz_cor/Car.cor" 
-	local TEST[$((c++))]="-n 1 $VM_dir/zaz_cor/Car.cor -n 1 $VM_dir/zaz_cor/Car.cor" 
-	local TEST[$((c++))]="-n 1 $VM_dir/zaz_cor/Car.cor -n 1 $VM_dir/zaz_cor/Car.cor -n 1 $VM_dir/zaz_cor/Car.cor -n 1 $VM_dir/zaz_cor/Car.cor" 
-	local TEST[$((c++))]="-n 1 $VM_dir/zaz_cor/Car.cor -n 1 $VM_dir/zaz_cor/Car.cor -n 2 $VM_dir/zaz_cor/Car.cor -n 3 $VM_dir/zaz_cor/Car.cor" 
-	local TEST[$((c++))]="-n 2 $VM_dir/zaz_cor/Car.cor -n 1 $VM_dir/zaz_cor/Car.cor -n 2 $VM_dir/zaz_cor/Car.cor -n 3 $VM_dir/zaz_cor/Car.cor"
-	local TEST[$((c++))]="$VM_dir/zaz_cor/Car.cor -n 3 $VM_dir/zaz_cor/Car.cor -n 2 $VM_dir/zaz_cor/Car.cor -n 3 $VM_dir/zaz_cor/Car.cor"
+	local TEST[$((c++))]="$VM_dir/valid_champions/Car.cor -dump" 
+	local TEST[$((c++))]="$VM_dir/valid_champions/Car.cor -n -dump" 
+	local TEST[$((c++))]="$VM_dir/valid_champions/Car.cor -n dump" 
+	local TEST[$((c++))]="$VM_dir/valid_champions/Car.cor -n 5" 
+	local TEST[$((c++))]="$VM_dir/valid_champions/Car.cor -n sdfsd" 
+	local TEST[$((c++))]="-n abc $VM_dir/valid_champions/Car.cor -n sdfsd" 
+	local TEST[$((c++))]="-n 1 $VM_dir/valid_champions/Car.cor -n 1 sdfsd" 
+	local TEST[$((c++))]="-n 1 -dump $VM_dir/valid_champions/Car.cor -n 1 sdfsd" 
+	local TEST[$((c++))]="-n 1 -dump a $VM_dir/valid_champions/Car.cor -n 1 sdfsd" 
+	local TEST[$((c++))]="-n -99991 $VM_dir/valid_champions/Car.cor" 
+	local TEST[$((c++))]="-n 1 $VM_dir/valid_champions/Car.cor -n 1 $VM_dir/valid_champions/Car.cor" 
+	local TEST[$((c++))]="-n 1 $VM_dir/valid_champions/Car.cor -n 1 $VM_dir/valid_champions/Car.cor -n 1 $VM_dir/valid_champions/Car.cor -n 1 $VM_dir/valid_champions/Car.cor" 
+	local TEST[$((c++))]="-n 1 $VM_dir/valid_champions/Car.cor -n 1 $VM_dir/valid_champions/Car.cor -n 2 $VM_dir/valid_champions/Car.cor -n 3 $VM_dir/valid_champions/Car.cor" 
+	local TEST[$((c++))]="-n 2 $VM_dir/valid_champions/Car.cor -n 1 $VM_dir/valid_champions/Car.cor -n 2 $VM_dir/valid_champions/Car.cor -n 3 $VM_dir/valid_champions/Car.cor"
+	local TEST[$((c++))]="$VM_dir/valid_champions/Car.cor -n 3 $VM_dir/valid_champions/Car.cor -n 2 $VM_dir/valid_champions/Car.cor -n 3 $VM_dir/valid_champions/Car.cor"
+
+	#Invalid files
+	local TEST[$((c++))]="$VM_dir/outer/file" 
+	local TEST[$((c++))]="$VM_dir/$OUTER" 
+	
+	#No argument
+	local TEST[$((c++))]="" 
+	
 
 	while [ $i -le $c ]
 	do
@@ -74,14 +87,18 @@ outer_parsing_tests()
 		pkill corewar
 		if grep -r "Usage:" $OUTER/TEST[$i].txt > /dev/null;
 			then
+				printf "$COLOR\0.$END"
 				rm $OUTER/TEST[$i].txt
 			else
-			let "failed++"
+				printf "🔥 "
+				let "failed++"
 				# $((failed++))
 		fi
 		let "i++"
 	done
-	cat $OUTER/*
+	printf "\n\n"
+
+	cat $OUTER/* 2>/dev/null
 
 	printf "$COLOR\n$(expr $c - $failed)/$c tests passed\n$END"
 	printf "$COLOR\0[OUTER PARSING TESTS DONE]\n$END"
@@ -91,32 +108,34 @@ outer_parsing_tests()
 inner_parsing_tests()
 {
 	local i=1
-	
+
 	clear
 	printf "$COLOR\0TN_TEST // COREWAR\n$END"
 	printf "$COLOR\0VM TESTS\n$END"
-	printf "$COLOR\0INNER PARSING TESTS\n\n$END"
+	printf "$COLOR\0INNER PARSING TESTS\n$END"
+	printf "$COLOR\0[$2]\n\n$END"
 
-	# rm -rf $VM_dir/inner/i_pagny/tests_logs
-	rm -rf 2> /dev/null $VM_dir/inner/i_pagny/tests_logs
-	mkdir -p $VM_dir/inner/i_pagny/tests_logs
+	rm -rf 2> /dev/null $1/tests_logs
+	mkdir -p $1/tests_logs
 
-	for file in $VM_dir/inner/i_pagny/*.cor;
+	for file in $1/*.cor;
         do
-			printf "$COLOR\0Error on TEST[$i] 🔥\n$END" >> $VM_dir/inner/i_pagny/tests_logs/TEST[$i].txt 2>&1
-			printf "./$VM_dir/corewar $file\n" >> $VM_dir/inner/i_pagny/tests_logs/TEST[$i].txt 2>&1
-	        ./$VM_dir/corewar $file >> $VM_dir/inner/i_pagny/tests_logs/TEST[$i].txt 2>&1
-			# pkill corewar
-			if grep -r "Usage:" $VM_dir/inner/i_pagny/tests_logs/TEST[$i].txt > /dev/null;
+			printf "$COLOR\0Error on TEST[$i] 🔥\n$END" >> $1/tests_logs/TEST[$i].txt 2>&1
+			printf "./$VM_dir/corewar $file\n" >> $1/tests_logs/TEST[$i].txt 2>&1
+	        ./$VM_dir/corewar $file >> $1/tests_logs/TEST[$i].txt 2>&1
+# 			# pkill corewar
+			if grep -r "Usage:" $1/tests_logs/TEST[$i].txt > /dev/null;
 			then
-				rm $VM_dir/inner/i_pagny/tests_logs/TEST[$i].txt
+				printf "$COLOR\0.$END"
+				rm $1/tests_logs/TEST[$i].txt
+			else
+				printf "🔥 "
 		fi
 		let "i++"
-            # printf "$COLOR\0■$END"
         done
-	cat $VM_dir/inner/i_pagny/tests_logs/*
+	printf "\n\n"
+	cat $1/tests_logs/* 2>/dev/null
 
-	printf "$COLOR\0[INNER PARSING TESTS DONE]\n$END"
     read -p "Press enter to continue..."
 }
 
@@ -131,7 +150,10 @@ run_vm_tests()
 		cp corewar $VM_dir/
 	    # vm_compile_zaz
 		outer_parsing_tests
-		# inner_parsing_tests
+		inner_parsing_tests $DIFF $DIFF_T
+		inner_parsing_tests $HEAD $HEAD_T
+		inner_parsing_tests $LARGE $LARGE_T
+		inner_parsing_tests $SMALL $SMALL_T
 	else
 		printf "$COLOR\0Move your asm to the current folder, then restart (File must be named corewar).\n$END"
 	fi
