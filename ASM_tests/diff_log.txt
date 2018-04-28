@@ -1,4 +1,15 @@
 Only in ASM_tests/zaz_cor: Misaka_Mikoto.cor
+Only in ASM_tests/zaz_cor: Rainbow_dash.cor
+Only in ASM_tests/zaz_cor: add.cor
+Only in ASM_tests/zaz_cor: and.cor
+Only in ASM_tests/zaz_cor: barriere.cor
 Only in ASM_tests/zaz_cor: bee_gees.cor
-Binary files ASM_tests/your_cor/perso5.cor and ASM_tests/zaz_cor/perso5.cor differ
+Only in ASM_tests/zaz_cor: champ.cor
+Only in ASM_tests/zaz_cor: ldi.cor
+Only in ASM_tests/zaz_cor: lldi.cor
+Only in ASM_tests/zaz_cor: or.cor
+Only in ASM_tests/zaz_cor: perso5.cor
+Only in ASM_tests/zaz_cor: st.cor
+Only in ASM_tests/zaz_cor: sti.cor
 Only in ASM_tests/zaz_cor: ultimate-surrender.cor
+Only in ASM_tests/zaz_cor: xor.cor

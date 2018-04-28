@@ -85,7 +85,8 @@ outer_parsing_tests()
 		printf "./$VM_dir/corewar ${TEST[$i]}\n" >> $OUTER/TEST[$i].txt 2>&1
 		./$VM_dir/corewar ${TEST[$i]} >> $OUTER/TEST[$i].txt 2>&1
 		pkill corewar
-		if grep -r "Usage:" $OUTER/TEST[$i].txt > /dev/null;
+		# if grep -r "Usage:" $OUTER/TEST[$i].txt > /dev/null;
+		if grep -r "ERROR" $OUTER/TEST[$i].txt > /dev/null;
 			then
 				printf "$COLOR\0.$END"
 				rm $OUTER/TEST[$i].txt
@@ -124,7 +125,8 @@ inner_parsing_tests()
 			printf "./$VM_dir/corewar $file\n" >> $1/tests_logs/TEST[$i].txt 2>&1
 	        ./$VM_dir/corewar $file >> $1/tests_logs/TEST[$i].txt 2>&1
 # 			# pkill corewar
-			if grep -r "Usage:" $1/tests_logs/TEST[$i].txt > /dev/null;
+			# if grep -r "Usage:" $1/tests_logs/TEST[$i].txt > /dev/null;
+			if grep -r "ERROR" $1/tests_logs/TEST[$i].txt > /dev/null;
 			then
 				printf "$COLOR\0.$END"
 				rm $1/tests_logs/TEST[$i].txt

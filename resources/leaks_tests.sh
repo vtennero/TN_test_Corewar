@@ -20,7 +20,7 @@ check_outer_valgrind()
 	local c=1
 	local i=1
 
-	rm -rf 2> /dev/null $VM_dir/outer/outer_leaks_logs.txt $VM_dir/outer/$VALGRIND_LOGS_DIR
+	rm -rf 2> /dev/null $VM_dir/outer/outer_leaks_log.txt $VM_dir/outer/$VALGRIND_LOGS_DIR
 	mkdir -p $VM_dir/outer/$VALGRIND_LOGS_DIR
 
 	#Invalid dump
@@ -63,7 +63,7 @@ check_outer_valgrind()
 			local indirectly_lb=$(cat $STORAGE_PATH | grep "indirectly lost: " | cut -d " " -f7)
 			if [ "$definitely_lb" != "0" ] || [ "$indirectly_lb" != "0" ]
 			then
-				printf "TEST[$i]:\t$definitely_lb bytes definitely lost, $indirectly_lb bytes indirectly lost\n" >> $VM_dir/outer/outer_leaks_logs.txt
+				printf "TEST[$i]:\t\t\t$definitely_lb bytes definitely lost, $indirectly_lb bytes indirectly lost\n" >> $VM_dir/outer/outer_leaks_log.txt
 				printf "💦 "
 			else
 				printf "$COLOR.$END"
@@ -72,7 +72,7 @@ check_outer_valgrind()
 		done
 		printf "\n\n"
 
-		cat $VM_dir/outer/outer_leaks_logs.txt
+		cat $VM_dir/outer/outer_leaks_log.txt 2>/dev/null
 		printf "\n"
 	    read -p "Press enter to continue..."
 }
@@ -83,18 +83,19 @@ check_one_valgrind()
 
 	printf "$COLOR\0[$2]\n$END"
 
-	rm -rf 2> /dev/null $1/$VALGRIND_LOGS_DIR $1/$2_leaks_logs.txt
+	rm -rf 2> /dev/null $1/$VALGRIND_LOGS_DIR $1/$2_leaks_log.txt
 	mkdir -p $1/$VALGRIND_LOGS_DIR
 
-	for file in $1/*.cor;
+	for file in $1/*$4;
 		do
+			# echo $file
 			local STORAGE_PATH=$1/$VALGRIND_LOGS_DIR"/"$VALGRIND_LOGS_FILENAME"_$i"
-			$HOME/.brew/Cellar/valgrind/3.13.0/bin/valgrind --leak-check=full --log-file="$STORAGE_PATH" ./$VM_dir/corewar $file > /dev/null 2>&1
+			$HOME/.brew/Cellar/valgrind/3.13.0/bin/valgrind --leak-check=full --log-file="$STORAGE_PATH" $3 $file > /dev/null 2>&1
 			local definitely_lb=$(cat $STORAGE_PATH | grep "definitely lost: " | cut -d " " -f7)
 			local indirectly_lb=$(cat $STORAGE_PATH | grep "indirectly lost: " | cut -d " " -f7)
 			if [ "$definitely_lb" != "0" ] || [ "$indirectly_lb" != "0" ]
 			then
-				printf "$file:\t$definitely_lb bytes definitely lost, $indirectly_lb bytes indirectly lost\n" >> $1/$2_leaks_logs.txt
+				printf "$file:\t\t\t$definitely_lb bytes definitely lost, $indirectly_lb bytes indirectly lost\n" >> $1/$2_leaks_log.txt
 				printf "💦 "
 			else
 				printf "$COLOR.$END"
@@ -103,7 +104,7 @@ check_one_valgrind()
 		done
 		printf "\n\n"
 
-	cat $1/$2_leaks_logs.txt 2>/dev/null
+	cat $1/$2_leaks_log.txt 2>/dev/null
 	printf "\n"
 }
 
@@ -114,7 +115,7 @@ valgrind_vm_valid()
 	printf "$COLOR\0LEAKS TESTS\n$END"
 	printf "$COLOR\0VALID CHAMPIONS\n$END"
 
-	check_one_valgrind $VALID $VALID_T
+	check_one_valgrind $VALID $VALID_T ./$VM_dir/corewar .cor
 
     read -p "Press enter to continue..."
 }
@@ -130,16 +131,37 @@ valgrind_vm_invalid()
 
 	printf "$COLOR\0INVALID CHAMPIONS (INNER)\n$END"
 	
-	check_one_valgrind $DIFF $DIFF_T
-	check_one_valgrind $HEAD $HEAD_T
-	# check_one_valgrind $LARGE $LARGE_T
-	check_one_valgrind $SMALL $SMALL_T
+	check_one_valgrind $DIFF $DIFF_T ./$VM_dir/corewar .cor
+	check_one_valgrind $HEAD $HEAD_T ./$VM_dir/corewar .cor
+	check_one_valgrind $LARGE $LARGE_T ./$VM_dir/corewar .cor
+	check_one_valgrind $SMALL $SMALL_T ./$VM_dir/corewar .cor
+    read -p "Press enter to continue..."
+}
+
+valgrind_asm()
+{
+	clear
+	printf "$COLOR\0TN_TEST // COREWAR\n$END"
+	printf "$COLOR\0LEAKS TESTS\n$END"
+	printf "$COLOR\0ASM\n$END"
+	printf "$COLOR\0Warning /!\\ Launching valgrind with fsanitize will make your session crash! Ctrl+C to stop now!\n$END"
+
+	rm -rf 2> /dev/null $ASM_dir/all_champs/*.cor
+
+	check_one_valgrind $ASM_dir/all_champs ALL_CHAMPS ./$ASM_dir/asm .s
+
+	mv $ASM_dir/all_champs/ALL_CHAMPS_leaks_log.txt ../
+
+	rm -rf 2> /dev/null $ASM_dir/all_champs/*.cor
+	
     read -p "Press enter to continue..."
 }
 
 valgrind_vm()
 {
-	# valgrind_vm_valid
+	#COMMENT THE FOLLOWING LINE TO SILENCE VALID CHAMPION VM LEAK CHECKS (CAN TAKE A WHILE...)
+	valgrind_vm_valid
+
 	valgrind_vm_invalid
 }
 
@@ -153,15 +175,17 @@ run_leaks_tests()
 
 	if [ $VERSION ]
 	then
-		# valgrind_asm
+		#COMMENT THE FOLLOWING LINE TO SILENCE *ALL* ASM LEAK CHECKS
+		valgrind_asm
+		
+		#COMMENT THE FOLLOWING LINE TO SILENCE *ALL* VM LEAK CHECKS
 		valgrind_vm
-		# rm -rf .dSYM
 	else
 		printf "$COLOR\0Valgrind is not installed on this machine.\n
 		Installing it now...$END"
 		brew update && brew install valgrind && alias valgrind="~/.brew/bin/valgrind"
 	fi
-	rm -rf 2> /dev/null $ASM_dir/asm.dSYM
+	rm -rf 2> /dev/null $ASM_dir/asm.dSYM asm.dSYM
 	rm -rf 2> /dev/null $VM_dir/corewar.dSYM
 	printf "$COLOR\n[LEAKS DONE]\n$END"
 

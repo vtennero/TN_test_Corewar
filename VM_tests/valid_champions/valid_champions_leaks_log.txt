@@ -1,0 +1,1 @@
+VM_tests/valid_champions/Wall.cor:			4,608 bytes definitely lost, 0 bytes indirectly lost
