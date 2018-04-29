@@ -140,7 +140,7 @@ run_vm_tests()
 	then
 		cp corewar $VM_dir/
 	    # vm_compile_zaz
-		# run_invalid_inputs
+		run_invalid_inputs
 		run_valid_inputs
 	else
 		printf "$COLOR\0Move your corewar to the current folder, then restart (File must be named corewar).\n$END"

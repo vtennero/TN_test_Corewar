@@ -99,7 +99,7 @@ valgrind_vm_invalid()
 	check_one_valgrind $HEAD $HEAD_T ./$VM_dir/corewar .cor
 	check_one_valgrind $LARGE $LARGE_T ./$VM_dir/corewar .cor
 	check_one_valgrind $SMALL $SMALL_T ./$VM_dir/corewar .cor
-	
+
     read -p "Press enter to continue..."
 }
 
@@ -123,7 +123,7 @@ valgrind_asm()
 valgrind_vm()
 {
 	#COMMENT THE FOLLOWING LINE TO SKIP VALID CHAMPION VM LEAK CHECKS (CAN TAKE A WHILE...)
-	# valgrind_vm_valid
+	valgrind_vm_valid
 
 	valgrind_vm_invalid
 }
@@ -137,7 +137,7 @@ run_leaks_tests()
 	if [ $VERSION ]
 	then
 		#COMMENT THE FOLLOWING LINE TO SKIP *ALL* ASM LEAK CHECKS
-		# valgrind_asm
+		valgrind_asm
 
 		#COMMENT THE FOLLOWING LINE TO SKIP *ALL* VM LEAK CHECKS
 		valgrind_vm
