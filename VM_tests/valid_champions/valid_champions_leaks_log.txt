@@ -1,5 +1,0 @@
-VM_tests/valid_champions/Wall.cor:			4,608 bytes definitely lost, 0 bytes indirectly lost
-VM_tests/valid_champions/lfork.cor:			2,304 bytes definitely lost, 0 bytes indirectly lost
-VM_tests/valid_champions/loose.cor:			2,304 bytes definitely lost, 0 bytes indirectly lost
-VM_tests/valid_champions/ultimate-surrender.cor:			2,304 bytes definitely lost, 0 bytes indirectly lost
-VM_tests/valid_champions/youforkmytralala.cor:			2,304 bytes definitely lost, 0 bytes indirectly lost

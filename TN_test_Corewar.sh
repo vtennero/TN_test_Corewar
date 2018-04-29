@@ -1,28 +1,32 @@
 #!/bin/bash
 
-COLOR='\x1b[38;5;220m'
-END='\x1b[0m'
 ASM_dir=ASM_tests
 VM_dir=VM_tests
-ERROR_OUTPUT="Erreur"
+
+ERROR_OUTPUT="ERROR"
+USAGE_OUTPUT="Usage:"
 
 source resources/asm_tests.sh
 source resources/vm_tests.sh
 source resources/leaks_tests.sh
+source resources/assets_interface.sh
+source resources/outer_tests.sh
+source resources/valid_tests.sh
 
-sh resources/animation.sh
+run_animation
+print_start_title
 
-clear
-echo "$COLOR\0TN_TEST // COREWAR\n$END"
-sleep 1
+#MODIFY THE FOLLOWING VARIABLES TO MATCH YOUR OUTPUT (FOR GREP)
+ERROR_OUTPUT="ERROR"
+USAGE_OUTPUT="Usage:"
 
-#COMMENT THE FOLLOWING LINE TO SILENCE *ALL* ASM TESTS
+#COMMENT THE FOLLOWING LINE TO SKIP *ALL* ASM TESTS
 # run_asm_tests
 
-#COMMENT THE FOLLOWING LINE TO SILENCE *ALL* VM TESTS
-# run_vm_tests
+#COMMENT THE FOLLOWING LINE TO SKIP *ALL* VM TESTS
+run_vm_tests
 
-#COMMENT THE FOLLOWING LINE TO SILENCE *ALL* LEAKS TESTS
-run_leaks_tests
+#COMMENT THE FOLLOWING LINE TO SKIP *ALL* LEAKS TESTS
+# run_leaks_tests
 
-echo "$COLOR\0[ALL DONE]$END"
+printf "$COLOR\0[ALL DONE]\n$END"

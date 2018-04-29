@@ -57,9 +57,11 @@ asm_make_a_difference()
 
 run_asm_tests()
 {
-    clear
-	printf "$COLOR\0TN_TEST // COREWAR\n$END"
-	printf "$COLOR\0ASM DIFF TESTS\n\n$END"
+    # clear
+	# printf "$COLOR\0TN_TEST // COREWAR\n$END"
+	# printf "$COLOR\0ASM DIFF TESTS\n\n$END"
+
+    print_title "ASM TESTS"
 
     if [ $(ls | grep asm) ]
 	then
