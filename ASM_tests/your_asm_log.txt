@@ -1873,3 +1873,368 @@ Writing output program to ASM_tests/s_files/while_fork.cor
 Writing output program to ASM_tests/s_files/youforkmytralala.cor
 Writing output program to ASM_tests/s_files/zjmp.cor
 Writing output program to ASM_tests/s_files/zork.cor
+Writing output program to ASM_tests/s_files/Asombra.cor
+Writing output program to ASM_tests/s_files/Car.cor
+Writing output program to ASM_tests/s_files/Gagnant.cor
+Writing output program to ASM_tests/s_files/Kappa.cor
+Writing output program to ASM_tests/s_files/Machine-gun.cor
+Writing output program to ASM_tests/s_files/MarineKing.cor
+wrong name/comment's syntax of ASM_tests/s_files/Misaka_Mikoto.s
+Writing output program to ASM_tests/s_files/Octobre_Rouge_V4.2.cor
+Error. Wrong command.
+Writing output program to ASM_tests/s_files/THUNDER.cor
+Writing output program to ASM_tests/s_files/Varimathras.cor
+Writing output program to ASM_tests/s_files/Wall.cor
+Writing output program to ASM_tests/s_files/_.cor
+Writing output program to ASM_tests/s_files/_honeybadger.cor
+.cor file too big.
+Writing output program to ASM_tests/s_files/aff.cor
+.cor file too big.
+.cor file too big.
+Error. Wrong registre.
+Writing output program to ASM_tests/s_files/big_feet.cor
+Writing output program to ASM_tests/s_files/big_life.cor
+Writing output program to ASM_tests/s_files/bigzork.cor
+Writing output program to ASM_tests/s_files/casimir.cor
+Error. Wrong command.
+Writing output program to ASM_tests/s_files/corelol.cor
+Writing output program to ASM_tests/s_files/darksasuke.cor
+Writing output program to ASM_tests/s_files/doge.cor
+Writing output program to ASM_tests/s_files/dubo.cor
+Writing output program to ASM_tests/s_files/ex.cor
+Writing output program to ASM_tests/s_files/fluttershy.cor
+Writing output program to ASM_tests/s_files/fork.cor
+Writing output program to ASM_tests/s_files/gedeon.cor
+Writing output program to ASM_tests/s_files/helltrain.cor
+Error. Wrong registre.
+Writing output program to ASM_tests/s_files/jinx.cor
+Writing output program to ASM_tests/s_files/jumper.cor
+Writing output program to ASM_tests/s_files/justin_bee.cor
+Writing output program to ASM_tests/s_files/ld.cor
+.cor file too big.
+Error. Wrong registre.
+Writing output program to ASM_tests/s_files/lfork.cor
+Writing output program to ASM_tests/s_files/littlepuppy.cor
+Writing output program to ASM_tests/s_files/live.cor
+Writing output program to ASM_tests/s_files/lld.cor
+.cor file too big.
+Writing output program to ASM_tests/s_files/loose.cor
+Writing output program to ASM_tests/s_files/mandragore.cor
+Writing output program to ASM_tests/s_files/maxidef.cor
+Writing output program to ASM_tests/s_files/meowluigi.cor
+Writing output program to ASM_tests/s_files/mortel.cor
+.cor file too big.
+Writing output program to ASM_tests/s_files/perso.cor
+wrong name/comment's syntax of ASM_tests/s_files/perso5.s
+Writing output program to ASM_tests/s_files/salamahenagalabadoun.cor
+Writing output program to ASM_tests/s_files/sam_2.0.cor
+Writing output program to ASM_tests/s_files/seg.cor
+Writing output program to ASM_tests/s_files/skynet.cor
+Writing output program to ASM_tests/s_files/slider2.cor
+.cor file too big.
+.cor file too big.
+Error. Wrong registre.
+Error. Wrong registre.
+Error. 
+Writing output program to ASM_tests/s_files/terminator.cor
+Writing output program to ASM_tests/s_files/toto.cor
+Writing output program to ASM_tests/s_files/turtle.cor
+Error. Wrong numbers of instructions.
+Writing output program to ASM_tests/s_files/valid.cor
+Writing output program to ASM_tests/s_files/while_fork.cor
+.cor file too big.
+Writing output program to ASM_tests/s_files/youforkmytralala.cor
+Writing output program to ASM_tests/s_files/zjmp.cor
+Writing output program to ASM_tests/s_files/zork.cor
+Writing output program to ASM_tests/s_files/Asombra.cor
+Writing output program to ASM_tests/s_files/Car.cor
+Writing output program to ASM_tests/s_files/Gagnant.cor
+Writing output program to ASM_tests/s_files/Kappa.cor
+Writing output program to ASM_tests/s_files/Machine-gun.cor
+Writing output program to ASM_tests/s_files/MarineKing.cor
+wrong name/comment's syntax of ASM_tests/s_files/Misaka_Mikoto.s
+Writing output program to ASM_tests/s_files/Octobre_Rouge_V4.2.cor
+Error. Wrong command.
+Writing output program to ASM_tests/s_files/THUNDER.cor
+Writing output program to ASM_tests/s_files/Varimathras.cor
+Writing output program to ASM_tests/s_files/Wall.cor
+Writing output program to ASM_tests/s_files/_.cor
+Writing output program to ASM_tests/s_files/_honeybadger.cor
+.cor file too big.
+Writing output program to ASM_tests/s_files/aff.cor
+.cor file too big.
+.cor file too big.
+Error. Wrong registre.
+Writing output program to ASM_tests/s_files/big_feet.cor
+Writing output program to ASM_tests/s_files/big_life.cor
+Writing output program to ASM_tests/s_files/bigzork.cor
+Writing output program to ASM_tests/s_files/casimir.cor
+Error. Wrong command.
+Writing output program to ASM_tests/s_files/corelol.cor
+Writing output program to ASM_tests/s_files/darksasuke.cor
+Writing output program to ASM_tests/s_files/doge.cor
+Writing output program to ASM_tests/s_files/dubo.cor
+Writing output program to ASM_tests/s_files/ex.cor
+Writing output program to ASM_tests/s_files/fluttershy.cor
+Writing output program to ASM_tests/s_files/fork.cor
+Writing output program to ASM_tests/s_files/gedeon.cor
+Writing output program to ASM_tests/s_files/helltrain.cor
+Error. Wrong registre.
+Writing output program to ASM_tests/s_files/jinx.cor
+Writing output program to ASM_tests/s_files/jumper.cor
+Writing output program to ASM_tests/s_files/justin_bee.cor
+Writing output program to ASM_tests/s_files/ld.cor
+.cor file too big.
+Error. Wrong registre.
+Writing output program to ASM_tests/s_files/lfork.cor
+Writing output program to ASM_tests/s_files/littlepuppy.cor
+Writing output program to ASM_tests/s_files/live.cor
+Writing output program to ASM_tests/s_files/lld.cor
+.cor file too big.
+Writing output program to ASM_tests/s_files/loose.cor
+Writing output program to ASM_tests/s_files/mandragore.cor
+Writing output program to ASM_tests/s_files/maxidef.cor
+Writing output program to ASM_tests/s_files/meowluigi.cor
+Writing output program to ASM_tests/s_files/mortel.cor
+.cor file too big.
+Writing output program to ASM_tests/s_files/perso.cor
+wrong name/comment's syntax of ASM_tests/s_files/perso5.s
+Writing output program to ASM_tests/s_files/salamahenagalabadoun.cor
+Writing output program to ASM_tests/s_files/sam_2.0.cor
+Writing output program to ASM_tests/s_files/seg.cor
+Writing output program to ASM_tests/s_files/skynet.cor
+Writing output program to ASM_tests/s_files/slider2.cor
+.cor file too big.
+.cor file too big.
+Error. Wrong registre.
+Error. Wrong registre.
+Error. 
+Writing output program to ASM_tests/s_files/terminator.cor
+Writing output program to ASM_tests/s_files/toto.cor
+Writing output program to ASM_tests/s_files/turtle.cor
+Error. Wrong numbers of instructions.
+Writing output program to ASM_tests/s_files/valid.cor
+Writing output program to ASM_tests/s_files/while_fork.cor
+.cor file too big.
+Writing output program to ASM_tests/s_files/youforkmytralala.cor
+Writing output program to ASM_tests/s_files/zjmp.cor
+Writing output program to ASM_tests/s_files/zork.cor
+Writing output program to ASM_tests/s_files/Asombra.cor
+Writing output program to ASM_tests/s_files/Car.cor
+Writing output program to ASM_tests/s_files/Gagnant.cor
+Writing output program to ASM_tests/s_files/Kappa.cor
+Writing output program to ASM_tests/s_files/Machine-gun.cor
+Writing output program to ASM_tests/s_files/MarineKing.cor
+wrong name/comment's syntax of ASM_tests/s_files/Misaka_Mikoto.s
+Writing output program to ASM_tests/s_files/Octobre_Rouge_V4.2.cor
+Error. Wrong command.
+Writing output program to ASM_tests/s_files/THUNDER.cor
+Writing output program to ASM_tests/s_files/Varimathras.cor
+Writing output program to ASM_tests/s_files/Wall.cor
+Writing output program to ASM_tests/s_files/_.cor
+Writing output program to ASM_tests/s_files/_honeybadger.cor
+.cor file too big.
+Writing output program to ASM_tests/s_files/aff.cor
+.cor file too big.
+.cor file too big.
+Error. Wrong registre.
+Writing output program to ASM_tests/s_files/big_feet.cor
+Writing output program to ASM_tests/s_files/big_life.cor
+Writing output program to ASM_tests/s_files/bigzork.cor
+Writing output program to ASM_tests/s_files/casimir.cor
+Error. Wrong command.
+Writing output program to ASM_tests/s_files/corelol.cor
+Writing output program to ASM_tests/s_files/darksasuke.cor
+Writing output program to ASM_tests/s_files/doge.cor
+Writing output program to ASM_tests/s_files/dubo.cor
+Writing output program to ASM_tests/s_files/ex.cor
+Writing output program to ASM_tests/s_files/fluttershy.cor
+Writing output program to ASM_tests/s_files/fork.cor
+Writing output program to ASM_tests/s_files/gedeon.cor
+Writing output program to ASM_tests/s_files/helltrain.cor
+Error. Wrong registre.
+Writing output program to ASM_tests/s_files/jinx.cor
+Writing output program to ASM_tests/s_files/jumper.cor
+Writing output program to ASM_tests/s_files/justin_bee.cor
+Writing output program to ASM_tests/s_files/ld.cor
+.cor file too big.
+Error. Wrong registre.
+Writing output program to ASM_tests/s_files/lfork.cor
+Writing output program to ASM_tests/s_files/littlepuppy.cor
+Writing output program to ASM_tests/s_files/live.cor
+Writing output program to ASM_tests/s_files/lld.cor
+.cor file too big.
+Writing output program to ASM_tests/s_files/loose.cor
+Writing output program to ASM_tests/s_files/mandragore.cor
+Writing output program to ASM_tests/s_files/maxidef.cor
+Writing output program to ASM_tests/s_files/meowluigi.cor
+Writing output program to ASM_tests/s_files/mortel.cor
+.cor file too big.
+Writing output program to ASM_tests/s_files/perso.cor
+wrong name/comment's syntax of ASM_tests/s_files/perso5.s
+Writing output program to ASM_tests/s_files/salamahenagalabadoun.cor
+Writing output program to ASM_tests/s_files/sam_2.0.cor
+Writing output program to ASM_tests/s_files/seg.cor
+Writing output program to ASM_tests/s_files/skynet.cor
+Writing output program to ASM_tests/s_files/slider2.cor
+.cor file too big.
+.cor file too big.
+Error. Wrong registre.
+Error. Wrong registre.
+Error. 
+Writing output program to ASM_tests/s_files/terminator.cor
+Writing output program to ASM_tests/s_files/toto.cor
+Writing output program to ASM_tests/s_files/turtle.cor
+Error. Wrong numbers of instructions.
+Writing output program to ASM_tests/s_files/valid.cor
+Writing output program to ASM_tests/s_files/while_fork.cor
+.cor file too big.
+Writing output program to ASM_tests/s_files/youforkmytralala.cor
+Writing output program to ASM_tests/s_files/zjmp.cor
+Writing output program to ASM_tests/s_files/zork.cor
+Writing output program to ASM_tests/s_files/Asombra.cor
+Writing output program to ASM_tests/s_files/Car.cor
+Writing output program to ASM_tests/s_files/Gagnant.cor
+Writing output program to ASM_tests/s_files/Kappa.cor
+Writing output program to ASM_tests/s_files/Machine-gun.cor
+Writing output program to ASM_tests/s_files/MarineKing.cor
+wrong name/comment's syntax of ASM_tests/s_files/Misaka_Mikoto.s
+Writing output program to ASM_tests/s_files/Octobre_Rouge_V4.2.cor
+Error. Wrong command.
+Writing output program to ASM_tests/s_files/THUNDER.cor
+Writing output program to ASM_tests/s_files/Varimathras.cor
+Writing output program to ASM_tests/s_files/Wall.cor
+Writing output program to ASM_tests/s_files/_.cor
+Writing output program to ASM_tests/s_files/_honeybadger.cor
+.cor file too big.
+Writing output program to ASM_tests/s_files/aff.cor
+.cor file too big.
+.cor file too big.
+Error. Wrong registre.
+Writing output program to ASM_tests/s_files/big_feet.cor
+Writing output program to ASM_tests/s_files/big_life.cor
+Writing output program to ASM_tests/s_files/bigzork.cor
+Writing output program to ASM_tests/s_files/casimir.cor
+Error. Wrong command.
+Writing output program to ASM_tests/s_files/corelol.cor
+Writing output program to ASM_tests/s_files/darksasuke.cor
+Writing output program to ASM_tests/s_files/doge.cor
+Writing output program to ASM_tests/s_files/dubo.cor
+Writing output program to ASM_tests/s_files/ex.cor
+Writing output program to ASM_tests/s_files/fluttershy.cor
+Writing output program to ASM_tests/s_files/fork.cor
+Writing output program to ASM_tests/s_files/gedeon.cor
+Writing output program to ASM_tests/s_files/helltrain.cor
+Error. Wrong registre.
+Writing output program to ASM_tests/s_files/jinx.cor
+Writing output program to ASM_tests/s_files/jumper.cor
+Writing output program to ASM_tests/s_files/justin_bee.cor
+Writing output program to ASM_tests/s_files/ld.cor
+.cor file too big.
+Error. Wrong registre.
+Writing output program to ASM_tests/s_files/lfork.cor
+Writing output program to ASM_tests/s_files/littlepuppy.cor
+Writing output program to ASM_tests/s_files/live.cor
+Writing output program to ASM_tests/s_files/lld.cor
+.cor file too big.
+Writing output program to ASM_tests/s_files/loose.cor
+Writing output program to ASM_tests/s_files/mandragore.cor
+Writing output program to ASM_tests/s_files/maxidef.cor
+Writing output program to ASM_tests/s_files/meowluigi.cor
+Writing output program to ASM_tests/s_files/mortel.cor
+.cor file too big.
+Writing output program to ASM_tests/s_files/perso.cor
+wrong name/comment's syntax of ASM_tests/s_files/perso5.s
+Writing output program to ASM_tests/s_files/salamahenagalabadoun.cor
+Writing output program to ASM_tests/s_files/sam_2.0.cor
+Writing output program to ASM_tests/s_files/seg.cor
+Writing output program to ASM_tests/s_files/skynet.cor
+Writing output program to ASM_tests/s_files/slider2.cor
+.cor file too big.
+.cor file too big.
+Error. Wrong registre.
+Error. Wrong registre.
+Error. 
+Writing output program to ASM_tests/s_files/terminator.cor
+Writing output program to ASM_tests/s_files/toto.cor
+Writing output program to ASM_tests/s_files/turtle.cor
+Error. Wrong numbers of instructions.
+Writing output program to ASM_tests/s_files/valid.cor
+Writing output program to ASM_tests/s_files/while_fork.cor
+.cor file too big.
+Writing output program to ASM_tests/s_files/youforkmytralala.cor
+Writing output program to ASM_tests/s_files/zjmp.cor
+Writing output program to ASM_tests/s_files/zork.cor
+Writing output program to ASM_tests/s_files/Asombra.cor
+Writing output program to ASM_tests/s_files/Car.cor
+Writing output program to ASM_tests/s_files/Gagnant.cor
+Writing output program to ASM_tests/s_files/Kappa.cor
+Writing output program to ASM_tests/s_files/Machine-gun.cor
+Writing output program to ASM_tests/s_files/MarineKing.cor
+wrong name/comment's syntax of ASM_tests/s_files/Misaka_Mikoto.s
+Writing output program to ASM_tests/s_files/Octobre_Rouge_V4.2.cor
+Error. Wrong command.
+Writing output program to ASM_tests/s_files/THUNDER.cor
+Writing output program to ASM_tests/s_files/Varimathras.cor
+Writing output program to ASM_tests/s_files/Wall.cor
+Writing output program to ASM_tests/s_files/_.cor
+Writing output program to ASM_tests/s_files/_honeybadger.cor
+.cor file too big.
+Writing output program to ASM_tests/s_files/aff.cor
+.cor file too big.
+.cor file too big.
+Error. Wrong registre.
+Writing output program to ASM_tests/s_files/big_feet.cor
+Writing output program to ASM_tests/s_files/big_life.cor
+Writing output program to ASM_tests/s_files/bigzork.cor
+Writing output program to ASM_tests/s_files/casimir.cor
+Error. Wrong command.
+Writing output program to ASM_tests/s_files/corelol.cor
+Writing output program to ASM_tests/s_files/darksasuke.cor
+Writing output program to ASM_tests/s_files/doge.cor
+Writing output program to ASM_tests/s_files/dubo.cor
+Writing output program to ASM_tests/s_files/ex.cor
+Writing output program to ASM_tests/s_files/fluttershy.cor
+Writing output program to ASM_tests/s_files/fork.cor
+Writing output program to ASM_tests/s_files/gedeon.cor
+Writing output program to ASM_tests/s_files/helltrain.cor
+Error. Wrong registre.
+Writing output program to ASM_tests/s_files/jinx.cor
+Writing output program to ASM_tests/s_files/jumper.cor
+Writing output program to ASM_tests/s_files/justin_bee.cor
+Writing output program to ASM_tests/s_files/ld.cor
+.cor file too big.
+Error. Wrong registre.
+Writing output program to ASM_tests/s_files/lfork.cor
+Writing output program to ASM_tests/s_files/littlepuppy.cor
+Writing output program to ASM_tests/s_files/live.cor
+Writing output program to ASM_tests/s_files/lld.cor
+.cor file too big.
+Writing output program to ASM_tests/s_files/loose.cor
+Writing output program to ASM_tests/s_files/mandragore.cor
+Writing output program to ASM_tests/s_files/maxidef.cor
+Writing output program to ASM_tests/s_files/meowluigi.cor
+Writing output program to ASM_tests/s_files/mortel.cor
+.cor file too big.
+Writing output program to ASM_tests/s_files/perso.cor
+wrong name/comment's syntax of ASM_tests/s_files/perso5.s
+Writing output program to ASM_tests/s_files/salamahenagalabadoun.cor
+Writing output program to ASM_tests/s_files/sam_2.0.cor
+Writing output program to ASM_tests/s_files/seg.cor
+Writing output program to ASM_tests/s_files/skynet.cor
+Writing output program to ASM_tests/s_files/slider2.cor
+.cor file too big.
+.cor file too big.
+Error. Wrong registre.
+Error. Wrong registre.
+Error. 
+Writing output program to ASM_tests/s_files/terminator.cor
+Writing output program to ASM_tests/s_files/toto.cor
+Writing output program to ASM_tests/s_files/turtle.cor
+Error. Wrong numbers of instructions.
+Writing output program to ASM_tests/s_files/valid.cor
+Writing output program to ASM_tests/s_files/while_fork.cor
+.cor file too big.
+Writing output program to ASM_tests/s_files/youforkmytralala.cor
+Writing output program to ASM_tests/s_files/zjmp.cor
+Writing output program to ASM_tests/s_files/zork.cor

@@ -1,0 +1,104 @@
+==96117== Memcheck, a memory error detector
+==96117== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==96117== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==96117== Command: ./VM_tests/corewar VM_tests/valid_champions/loose.cor
+==96117== Parent PID: 95670
+==96117== 
+==96117== Syscall param msg->desc.port.name points to uninitialised byte(s)
+==96117==    at 0x1003B434A: mach_msg_trap (in /usr/lib/system/libsystem_kernel.dylib)
+==96117==    by 0x1003B3796: mach_msg (in /usr/lib/system/libsystem_kernel.dylib)
+==96117==    by 0x1003AD485: task_set_special_port (in /usr/lib/system/libsystem_kernel.dylib)
+==96117==    by 0x10054910E: _os_trace_create_debug_control_port (in /usr/lib/system/libsystem_trace.dylib)
+==96117==    by 0x100549458: _libtrace_init (in /usr/lib/system/libsystem_trace.dylib)
+==96117==    by 0x1000B29DF: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+==96117==    by 0x100022A1A: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+==96117==    by 0x100022C1D: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+==96117==    by 0x10001E4A9: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+==96117==    by 0x10001E440: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+==96117==    by 0x10001D523: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+==96117==    by 0x10001D5B8: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+==96117==  Address 0x104895d0c is on thread 1's stack
+==96117==  in frame #2, created by task_set_special_port (???:)
+==96117== 
+==96117== Conditional jump or move depends on uninitialised value(s)
+==96117==    at 0x100000FCA: crawler (in ./VM_tests/corewar)
+==96117==    by 0x10000144B: main (in ./VM_tests/corewar)
+==96117== 
+==96117== Conditional jump or move depends on uninitialised value(s)
+==96117==    at 0x10000102F: crawler (in ./VM_tests/corewar)
+==96117==    by 0x10000144B: main (in ./VM_tests/corewar)
+==96117== 
+==96117== Conditional jump or move depends on uninitialised value(s)
+==96117==    at 0x10000104B: crawler (in ./VM_tests/corewar)
+==96117==    by 0x10000144B: main (in ./VM_tests/corewar)
+==96117== 
+==96117== Conditional jump or move depends on uninitialised value(s)
+==96117==    at 0x100001594: rang (in ./VM_tests/corewar)
+==96117==    by 0x10000262E: f_lfork (in ./VM_tests/corewar)
+==96117==    by 0x100001C68: exec6 (in ./VM_tests/corewar)
+==96117==    by 0x100001C0D: exec5 (in ./VM_tests/corewar)
+==96117==    by 0x100001ADC: exec4 (in ./VM_tests/corewar)
+==96117==    by 0x1000019B9: exec3 (in ./VM_tests/corewar)
+==96117==    by 0x10000188D: exec2 (in ./VM_tests/corewar)
+==96117==    by 0x100001E00: exec (in ./VM_tests/corewar)
+==96117==    by 0x100000FEA: crawler (in ./VM_tests/corewar)
+==96117==    by 0x10000144B: main (in ./VM_tests/corewar)
+==96117== 
+==96117== Invalid write of size 1
+==96117==    at 0x100005CB3: ft_memcpy (in ./VM_tests/corewar)
+==96117==    by 0x1000023C0: st (in ./VM_tests/corewar)
+==96117==    by 0x100001BDC: exec5 (in ./VM_tests/corewar)
+==96117==    by 0x100001ADC: exec4 (in ./VM_tests/corewar)
+==96117==    by 0x1000019B9: exec3 (in ./VM_tests/corewar)
+==96117==    by 0x10000188D: exec2 (in ./VM_tests/corewar)
+==96117==    by 0x100001E00: exec (in ./VM_tests/corewar)
+==96117==    by 0x100000FEA: crawler (in ./VM_tests/corewar)
+==96117==    by 0x10000144B: main (in ./VM_tests/corewar)
+==96117==  Address 0x100b6760c is 4 bytes before a block of size 4,096 alloc'd
+==96117==    at 0x1000A3A46: malloc (in /Users/vtennero/.brew/Cellar/valgrind/3.13.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
+==96117==    by 0x10000462A: make_arene (in ./VM_tests/corewar)
+==96117==    by 0x100001442: main (in ./VM_tests/corewar)
+==96117== 
+==96117== 
+==96117== HEAP SUMMARY:
+==96117==     in use at exit: 20,463 bytes in 163 blocks
+==96117==   total heap usage: 183 allocs, 20 frees, 33,019 bytes allocated
+==96117== 
+==96117== 72 bytes in 3 blocks are possibly lost in loss record 26 of 43
+==96117==    at 0x1000A40B2: calloc (in /Users/vtennero/.brew/Cellar/valgrind/3.13.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
+==96117==    by 0x1005BD832: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+==96117==    by 0x1005D0D6A: map_images (in /usr/lib/libobjc.A.dylib)
+==96117==    by 0x10001203B: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+==96117==    by 0x100012255: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+==96117==    by 0x10020B00A: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+==96117==    by 0x1005BD072: _objc_init (in /usr/lib/libobjc.A.dylib)
+==96117==    by 0x10019E68D: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+==96117==    by 0x10019E63A: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+==96117==    by 0x1000B29D5: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+==96117==    by 0x100022A1A: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+==96117==    by 0x100022C1D: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+==96117== 
+==96117== 2,304 bytes in 1 blocks are definitely lost in loss record 40 of 43
+==96117==    at 0x1000A3A46: malloc (in /Users/vtennero/.brew/Cellar/valgrind/3.13.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
+==96117==    by 0x10000255D: f_lfork (in ./VM_tests/corewar)
+==96117==    by 0x100001C68: exec6 (in ./VM_tests/corewar)
+==96117==    by 0x100001C0D: exec5 (in ./VM_tests/corewar)
+==96117==    by 0x100001ADC: exec4 (in ./VM_tests/corewar)
+==96117==    by 0x1000019B9: exec3 (in ./VM_tests/corewar)
+==96117==    by 0x10000188D: exec2 (in ./VM_tests/corewar)
+==96117==    by 0x100001E00: exec (in ./VM_tests/corewar)
+==96117==    by 0x100000FEA: crawler (in ./VM_tests/corewar)
+==96117==    by 0x10000144B: main (in ./VM_tests/corewar)
+==96117== 
+==96117== LEAK SUMMARY:
+==96117==    definitely lost: 2,304 bytes in 1 blocks
+==96117==    indirectly lost: 0 bytes in 0 blocks
+==96117==      possibly lost: 72 bytes in 3 blocks
+==96117==    still reachable: 200 bytes in 6 blocks
+==96117==         suppressed: 17,887 bytes in 153 blocks
+==96117== Reachable blocks (those to which a pointer was found) are not shown.
+==96117== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==96117== 
+==96117== For counts of detected and suppressed errors, rerun with: -v
+==96117== Use --track-origins=yes to see where uninitialised values come from
+==96117== ERROR SUMMARY: 2162 errors from 8 contexts (suppressed: 12 from 12)

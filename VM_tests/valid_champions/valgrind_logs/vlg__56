@@ -1,0 +1,97 @@
+==96258== Memcheck, a memory error detector
+==96258== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==96258== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==96258== Command: ./VM_tests/corewar VM_tests/valid_champions/toto.cor
+==96258== Parent PID: 95670
+==96258== 
+==96258== Syscall param msg->desc.port.name points to uninitialised byte(s)
+==96258==    at 0x1003B434A: mach_msg_trap (in /usr/lib/system/libsystem_kernel.dylib)
+==96258==    by 0x1003B3796: mach_msg (in /usr/lib/system/libsystem_kernel.dylib)
+==96258==    by 0x1003AD485: task_set_special_port (in /usr/lib/system/libsystem_kernel.dylib)
+==96258==    by 0x10054910E: _os_trace_create_debug_control_port (in /usr/lib/system/libsystem_trace.dylib)
+==96258==    by 0x100549458: _libtrace_init (in /usr/lib/system/libsystem_trace.dylib)
+==96258==    by 0x1000B29DF: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+==96258==    by 0x100022A1A: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+==96258==    by 0x100022C1D: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+==96258==    by 0x10001E4A9: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+==96258==    by 0x10001E440: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+==96258==    by 0x10001D523: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+==96258==    by 0x10001D5B8: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+==96258==  Address 0x104895d0c is on thread 1's stack
+==96258==  in frame #2, created by task_set_special_port (???:)
+==96258== 
+==96258== Conditional jump or move depends on uninitialised value(s)
+==96258==    at 0x100000FCA: crawler (in ./VM_tests/corewar)
+==96258==    by 0x10000144B: main (in ./VM_tests/corewar)
+==96258== 
+==96258== Conditional jump or move depends on uninitialised value(s)
+==96258==    at 0x10000102F: crawler (in ./VM_tests/corewar)
+==96258==    by 0x10000144B: main (in ./VM_tests/corewar)
+==96258== 
+==96258== Conditional jump or move depends on uninitialised value(s)
+==96258==    at 0x10000104B: crawler (in ./VM_tests/corewar)
+==96258==    by 0x10000144B: main (in ./VM_tests/corewar)
+==96258== 
+==96258== Conditional jump or move depends on uninitialised value(s)
+==96258==    at 0x1000031F7: zjump (in ./VM_tests/corewar)
+==96258==    by 0x100001988: exec3 (in ./VM_tests/corewar)
+==96258==    by 0x10000188D: exec2 (in ./VM_tests/corewar)
+==96258==    by 0x100001E00: exec (in ./VM_tests/corewar)
+==96258==    by 0x100000FEA: crawler (in ./VM_tests/corewar)
+==96258==    by 0x10000144B: main (in ./VM_tests/corewar)
+==96258== 
+==96258== Conditional jump or move depends on uninitialised value(s)
+==96258==    at 0x10000419F: check_live (in ./VM_tests/corewar)
+==96258==    by 0x10000108D: crawler (in ./VM_tests/corewar)
+==96258==    by 0x10000144B: main (in ./VM_tests/corewar)
+==96258== 
+==96258== Invalid read of size 8
+==96258==    at 0x1000042CF: extend (in ./VM_tests/corewar)
+==96258==    by 0x1000041B5: check_live (in ./VM_tests/corewar)
+==96258==    by 0x10000108D: crawler (in ./VM_tests/corewar)
+==96258==    by 0x10000144B: main (in ./VM_tests/corewar)
+==96258==  Address 0x100b675c8 is 2,296 bytes inside a block of size 2,304 free'd
+==96258==    at 0x1000A3E2B: free (in /Users/vtennero/.brew/Cellar/valgrind/3.13.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
+==96258==    by 0x1000042C7: extend (in ./VM_tests/corewar)
+==96258==    by 0x1000041B5: check_live (in ./VM_tests/corewar)
+==96258==    by 0x10000108D: crawler (in ./VM_tests/corewar)
+==96258==    by 0x10000144B: main (in ./VM_tests/corewar)
+==96258==  Block was alloc'd at
+==96258==    at 0x1000A3A46: malloc (in /Users/vtennero/.brew/Cellar/valgrind/3.13.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
+==96258==    by 0x10000126C: champions (in ./VM_tests/corewar)
+==96258==    by 0x100001435: main (in ./VM_tests/corewar)
+==96258== 
+==96258== Conditional jump or move depends on uninitialised value(s)
+==96258==    at 0x100001451: main (in ./VM_tests/corewar)
+==96258== 
+==96258== 
+==96258== HEAP SUMMARY:
+==96258==     in use at exit: 18,159 bytes in 162 blocks
+==96258==   total heap usage: 180 allocs, 18 frees, 30,703 bytes allocated
+==96258== 
+==96258== 72 bytes in 3 blocks are possibly lost in loss record 26 of 42
+==96258==    at 0x1000A40B2: calloc (in /Users/vtennero/.brew/Cellar/valgrind/3.13.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
+==96258==    by 0x1005BD832: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+==96258==    by 0x1005D0D6A: map_images (in /usr/lib/libobjc.A.dylib)
+==96258==    by 0x10001203B: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+==96258==    by 0x100012255: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+==96258==    by 0x10020B00A: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+==96258==    by 0x1005BD072: _objc_init (in /usr/lib/libobjc.A.dylib)
+==96258==    by 0x10019E68D: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+==96258==    by 0x10019E63A: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+==96258==    by 0x1000B29D5: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+==96258==    by 0x100022A1A: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+==96258==    by 0x100022C1D: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+==96258== 
+==96258== LEAK SUMMARY:
+==96258==    definitely lost: 0 bytes in 0 blocks
+==96258==    indirectly lost: 0 bytes in 0 blocks
+==96258==      possibly lost: 72 bytes in 3 blocks
+==96258==    still reachable: 200 bytes in 6 blocks
+==96258==         suppressed: 17,887 bytes in 153 blocks
+==96258== Reachable blocks (those to which a pointer was found) are not shown.
+==96258== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==96258== 
+==96258== For counts of detected and suppressed errors, rerun with: -v
+==96258== Use --track-origins=yes to see where uninitialised values come from
+==96258== ERROR SUMMARY: 2320 errors from 9 contexts (suppressed: 12 from 12)

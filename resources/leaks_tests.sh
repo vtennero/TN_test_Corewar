@@ -150,7 +150,7 @@ valgrind_asm()
 
 	check_one_valgrind $ASM_dir/all_champs ALL_CHAMPS ./$ASM_dir/asm .s
 
-	mv $ASM_dir/all_champs/ALL_CHAMPS_leaks_log.txt ../
+	mv $ASM_dir/all_champs/ALL_CHAMPS_leaks_log.txt ../ 2> /dev/null
 
 	rm -rf 2> /dev/null $ASM_dir/all_champs/*.cor
 	
@@ -176,8 +176,8 @@ run_leaks_tests()
 	if [ $VERSION ]
 	then
 		#COMMENT THE FOLLOWING LINE TO SILENCE *ALL* ASM LEAK CHECKS
-		valgrind_asm
-		
+		# valgrind_asm
+
 		#COMMENT THE FOLLOWING LINE TO SILENCE *ALL* VM LEAK CHECKS
 		valgrind_vm
 	else

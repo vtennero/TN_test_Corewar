@@ -17,10 +17,10 @@ echo "$COLOR\0TN_TEST // COREWAR\n$END"
 sleep 1
 
 #COMMENT THE FOLLOWING LINE TO SILENCE *ALL* ASM TESTS
-run_asm_tests
+# run_asm_tests
 
 #COMMENT THE FOLLOWING LINE TO SILENCE *ALL* VM TESTS
-run_vm_tests
+# run_vm_tests
 
 #COMMENT THE FOLLOWING LINE TO SILENCE *ALL* LEAKS TESTS
 run_leaks_tests

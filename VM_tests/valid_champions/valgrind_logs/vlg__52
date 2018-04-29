@@ -1,0 +1,65 @@
+==96218== Memcheck, a memory error detector
+==96218== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==96218== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==96218== Command: ./VM_tests/corewar VM_tests/valid_champions/slider2.cor
+==96218== Parent PID: 95670
+==96218== 
+==96218== Syscall param msg->desc.port.name points to uninitialised byte(s)
+==96218==    at 0x1003B434A: mach_msg_trap (in /usr/lib/system/libsystem_kernel.dylib)
+==96218==    by 0x1003B3796: mach_msg (in /usr/lib/system/libsystem_kernel.dylib)
+==96218==    by 0x1003AD485: task_set_special_port (in /usr/lib/system/libsystem_kernel.dylib)
+==96218==    by 0x10054910E: _os_trace_create_debug_control_port (in /usr/lib/system/libsystem_trace.dylib)
+==96218==    by 0x100549458: _libtrace_init (in /usr/lib/system/libsystem_trace.dylib)
+==96218==    by 0x1000B29DF: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+==96218==    by 0x100022A1A: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+==96218==    by 0x100022C1D: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+==96218==    by 0x10001E4A9: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+==96218==    by 0x10001E440: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, char const*, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+==96218==    by 0x10001D523: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+==96218==    by 0x10001D5B8: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+==96218==  Address 0x104895d0c is on thread 1's stack
+==96218==  in frame #2, created by task_set_special_port (???:)
+==96218== 
+==96218== Conditional jump or move depends on uninitialised value(s)
+==96218==    at 0x100000FCA: crawler (in ./VM_tests/corewar)
+==96218==    by 0x10000144B: main (in ./VM_tests/corewar)
+==96218== 
+==96218== Conditional jump or move depends on uninitialised value(s)
+==96218==    at 0x10000102F: crawler (in ./VM_tests/corewar)
+==96218==    by 0x10000144B: main (in ./VM_tests/corewar)
+==96218== 
+==96218== Conditional jump or move depends on uninitialised value(s)
+==96218==    at 0x10000104B: crawler (in ./VM_tests/corewar)
+==96218==    by 0x10000144B: main (in ./VM_tests/corewar)
+==96218== 
+==96218== 
+==96218== HEAP SUMMARY:
+==96218==     in use at exit: 18,159 bytes in 162 blocks
+==96218==   total heap usage: 181 allocs, 19 frees, 30,711 bytes allocated
+==96218== 
+==96218== 72 bytes in 3 blocks are possibly lost in loss record 26 of 42
+==96218==    at 0x1000A40B2: calloc (in /Users/vtennero/.brew/Cellar/valgrind/3.13.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
+==96218==    by 0x1005BD832: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+==96218==    by 0x1005D0D6A: map_images (in /usr/lib/libobjc.A.dylib)
+==96218==    by 0x10001203B: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+==96218==    by 0x100012255: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+==96218==    by 0x10020B00A: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+==96218==    by 0x1005BD072: _objc_init (in /usr/lib/libobjc.A.dylib)
+==96218==    by 0x10019E68D: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+==96218==    by 0x10019E63A: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+==96218==    by 0x1000B29D5: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+==96218==    by 0x100022A1A: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+==96218==    by 0x100022C1D: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+==96218== 
+==96218== LEAK SUMMARY:
+==96218==    definitely lost: 0 bytes in 0 blocks
+==96218==    indirectly lost: 0 bytes in 0 blocks
+==96218==      possibly lost: 72 bytes in 3 blocks
+==96218==    still reachable: 200 bytes in 6 blocks
+==96218==         suppressed: 17,887 bytes in 153 blocks
+==96218== Reachable blocks (those to which a pointer was found) are not shown.
+==96218== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==96218== 
+==96218== For counts of detected and suppressed errors, rerun with: -v
+==96218== Use --track-origins=yes to see where uninitialised values come from
+==96218== ERROR SUMMARY: 1757 errors from 5 contexts (suppressed: 12 from 12)

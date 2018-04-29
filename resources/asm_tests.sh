@@ -31,8 +31,8 @@ asm_compile_you()
         for file in $ASM_dir/s_files/*.s;
             do
 	            ./$ASM_dir/asm $file >> $ASM_dir/your_asm_log.txt 2>&1
-                # printf "$COLOR\0■$END"
-                echo $file
+                printf "$COLOR\0■$END"
+                # echo $file
             done
     printf "$COLOR\0]$END"
         for file in $ASM_dir/s_files/*.cor;
