@@ -41,6 +41,11 @@ valid_test[$((N_VALID_TESTS++))]="-dump 9223372036854775807 -n 4 $VM_dir/valid_c
 
 #Valid game 1P
 valid_test[$((N_VALID_TESTS++))]="$VM_dir/valid_champions/Car.cor" 
+valid_test[$((N_VALID_TESTS++))]="$VM_dir/valid_champions/Misaka_Mikoto.cor" 
+valid_test[$((N_VALID_TESTS++))]="$VM_dir/valid_champions/and.cor" 
+valid_test[$((N_VALID_TESTS++))]="$VM_dir/valid_champions/barriere.cor" 
+valid_test[$((N_VALID_TESTS++))]="$VM_dir/valid_champions/add.cor" 
+valid_test[$((N_VALID_TESTS++))]="$VM_dir/valid_champions/perso5.cor" 
 
 #Valid game 2P
 valid_test[$((N_VALID_TESTS++))]="-n 1 $VM_dir/valid_champions/Car.cor $VM_dir/valid_champions/Car.cor" 

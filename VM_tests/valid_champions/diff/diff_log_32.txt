@@ -1,0 +1,9 @@
+--- VM_tests/valid_champions/you/your_output_32	2018-04-30 20:01:31.000000000 +0200
++++ VM_tests/valid_champions/natapol/natapol_output_32	2018-04-30 20:01:31.000000000 +0200
+@@ -1,2 +1,3 @@
+-ERROR: incorect file
+-
+\ No newline at end of file
++Error: File VM_tests/valid_champions/barriere.cor has too large a code (1023 bytes > 682 bytes)
++ERROR in header 
++Lao-Tseu a dit : "L'échec est le fondement de la réussite."

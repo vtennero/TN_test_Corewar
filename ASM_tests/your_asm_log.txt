@@ -2457,3 +2457,19 @@ Writing output program to ASM_tests/s_files/while_fork.cor
 Writing output program to ASM_tests/s_files/youforkmytralala.cor
 Writing output program to ASM_tests/s_files/zjmp.cor
 Writing output program to ASM_tests/s_files/zork.cor
+Writing output program to ASM_tests/s_files/Asombra.cor
+Writing output program to ASM_tests/s_files/Car.cor
+Writing output program to ASM_tests/s_files/Gagnant.cor
+Writing output program to ASM_tests/s_files/Kappa.cor
+Writing output program to ASM_tests/s_files/Machine-gun.cor
+Writing output program to ASM_tests/s_files/MarineKing.cor
+wrong name/comment's syntax of ASM_tests/s_files/Misaka_Mikoto.s
+Writing output program to ASM_tests/s_files/Octobre_Rouge_V4.2.cor
+Error. Wrong command.
+Writing output program to ASM_tests/s_files/THUNDER.cor
+Writing output program to ASM_tests/s_files/Varimathras.cor
+Writing output program to ASM_tests/s_files/Wall.cor
+Writing output program to ASM_tests/s_files/_.cor
+Writing output program to ASM_tests/s_files/_honeybadger.cor
+.cor file too big.
+Writing output program to ASM_tests/s_files/aff.cor

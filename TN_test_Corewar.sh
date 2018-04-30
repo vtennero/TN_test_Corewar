@@ -13,20 +13,20 @@ source resources/assets_interface.sh
 source resources/outer_tests.sh
 source resources/valid_tests.sh
 
-run_animation
-print_start_title
+# run_animation
+# print_start_title
 
 #MODIFY THE FOLLOWING VARIABLES TO MATCH YOUR OUTPUT FORMAT (FOR GREP PURPOSES)
 ERROR_OUTPUT="ERROR"
 USAGE_OUTPUT="Usage:"
 
 #COMMENT THE FOLLOWING LINE TO SKIP *ALL* ASM TESTS
-run_asm_tests
+# run_asm_tests
 
 #COMMENT THE FOLLOWING LINE TO SKIP *ALL* VM TESTS
 run_vm_tests
 
 #COMMENT THE FOLLOWING LINE TO SKIP *ALL* LEAKS TESTS
-run_leaks_tests
+# run_leaks_tests
 
 printf "$COLOR\0[ALL DONE]\n$END"

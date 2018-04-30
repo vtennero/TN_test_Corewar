@@ -1,0 +1,11 @@
+--- VM_tests/valid_champions/you/your_output_43	2018-04-30 20:01:33.000000000 +0200
++++ VM_tests/valid_champions/natapol/natapol_output_43	2018-04-30 20:01:33.000000000 +0200
+@@ -1,2 +1,5 @@
+-ERROR d'argument
+-
+\ No newline at end of file
++Introducing contestants...
++* Player 4, weighing 15 bytes, "Tching tching(Intercepteur), Bouh!Bouh!(bruits d'anti-jeu)" ("") !
++* Player 2, weighing 15 bytes, "Tching tching(Intercepteur), Bouh!Bouh!(bruits d'anti-jeu)" ("") !
++* Player 3, weighing 15 bytes, "Tching tching(Intercepteur), Bouh!Bouh!(bruits d'anti-jeu)" ("") !
++Contestant 3, "Tching tching(Intercepteur), Bouh!Bouh!(bruits d'anti-jeu)", has won !

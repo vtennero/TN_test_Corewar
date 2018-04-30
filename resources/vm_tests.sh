@@ -116,19 +116,50 @@ run_valid_inputs()
 	local i=1
 	# local failed=0
 
+	# N_VALID_TESTS=1
+
 	print_title "VM_TESTS"
 	printf "$COLOR\0VALID INPUTS\n\n$END"
 
-	# rm -rf 2> /dev/null $OUTER
-	# mkdir -p $OUTER
+	rm -rf 2> /dev/null $VM_dir/valid_champions/you
+	rm -rf 2> /dev/null $VM_dir/valid_champions/natapol
+	rm -rf 2> /dev/null $VM_dir/valid_champions/diff
+	mkdir -p $VM_dir/valid_champions/you
+	mkdir -p $VM_dir/valid_champions/natapol
+	mkdir -p $VM_dir/valid_champions/diff
 	
 	while [ $i -le $N_VALID_TESTS ]
 	do
-		echo ${valid_test[$i]}
-	    ./$VM_dir/corewar ${valid_test[$i]}
-   		read -p "Press enter to continue..."
+		# echo ${valid_test[$i]}
+	    ./$VM_dir/corewar ${valid_test[$i]} > $VM_dir/valid_champions/you/your_output_$i 2>&1
+	    ./$VM_dir/natapolcorewar ${valid_test[$i]} > $VM_dir/valid_champions/natapol/natapol_output_$i 2>&1
+	    # ./$VM_dir/natapolcorewar ${valid_test[$i]}
+		# diff -u $VM_dir/valid_champions/you/your_output_$i $VM_dir/valid_champions/natapol/natapol_output_$i
+		diff -u $VM_dir/valid_champions/you/your_output_$i $VM_dir/valid_champions/natapol/natapol_output_$i > $VM_dir/valid_champions/diff/diff_log_$i.txt
+		# if diff -u $VM_dir/valid_champions/you/your_output_$i $VM_dir/valid_champions/natapol/natapol_output_$i > $VM_dir/valid_champions/diff/diff_log_$i.txt;
+		# if ! diff -u $VM_dir/valid_champions/you/your_output_$i $VM_dir/valid_champions/natapol/natapol_output_$i
+		if [ -s $VM_dir/valid_champions/diff/diff_log_$i.txt ]
+		then
+			printf "🔥 "
+		else
+			printf "$COLOR.$END"
+			rm $VM_dir/valid_champions/diff/diff_log_$i.txt
+		fi
 		let "i++"
 	done
+
+	while [ $i -le $N_VALID_TESTS ]
+	do
+		
+	for file in $VM_dir/valid_champions/diff/*;
+	do
+		printf "$COLOR\0ERROR on $END"
+		echo "$COLOR${file##*/}$END 🔥"
+		cat $file
+		read -p "Press enter to continue..."
+	done
+
+	read -p "Press enter to continue..."
 
 }
 
@@ -140,7 +171,7 @@ run_vm_tests()
 	then
 		cp corewar $VM_dir/
 	    # vm_compile_zaz
-		run_invalid_inputs
+		# run_invalid_inputs
 		run_valid_inputs
 	else
 		printf "$COLOR\0Move your corewar to the current folder, then restart (File must be named corewar).\n$END"

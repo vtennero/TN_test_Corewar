@@ -1,0 +1,7 @@
+--- VM_tests/valid_champions/you/your_output_44	2018-04-30 20:01:33.000000000 +0200
++++ VM_tests/valid_champions/natapol/natapol_output_44	2018-04-30 20:01:33.000000000 +0200
+@@ -1,2 +1 @@
+-ERROR d'argument
+-
+\ No newline at end of file
++Usage: ./corewar [-dump N || -v] [-n N] <champion1.cor> <...>
