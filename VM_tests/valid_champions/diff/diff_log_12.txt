@@ -1,5 +1,5 @@
---- VM_tests/valid_champions/you/your_output_12	2018-04-30 20:01:30.000000000 +0200
-+++ VM_tests/valid_champions/natapol/natapol_output_12	2018-04-30 20:01:30.000000000 +0200
+--- VM_tests/valid_champions/you/your_output_12	2018-05-01 15:14:35.000000000 +0200
++++ VM_tests/valid_champions/natapol/natapol_output_12	2018-05-01 15:14:35.000000000 +0200
 @@ -1,2 +1,3 @@
 -ERROR d'argument
 -

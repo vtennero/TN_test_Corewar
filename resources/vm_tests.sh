@@ -148,8 +148,8 @@ run_valid_inputs()
 		let "i++"
 	done
 
-	while [ $i -le $N_VALID_TESTS ]
-	do
+	# while [ $i -le $N_VALID_TESTS ]
+	# do
 		
 	for file in $VM_dir/valid_champions/diff/*;
 	do
@@ -171,7 +171,7 @@ run_vm_tests()
 	then
 		cp corewar $VM_dir/
 	    # vm_compile_zaz
-		# run_invalid_inputs
+		run_invalid_inputs
 		run_valid_inputs
 	else
 		printf "$COLOR\0Move your corewar to the current folder, then restart (File must be named corewar).\n$END"
