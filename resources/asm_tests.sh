@@ -2,7 +2,8 @@
 
 asm_compile_zaz()
 {
-	printf "$COLOR\0Compiling Zaz...This can take up to 6 minutes...\n$END"
+	# printf "$COLOR\0Compiling Zaz...This can take up to 6 minutes...\n$END"
+	printf "$COLOR\0Compiling Zaz...\n$END"
 
     rm -rf $ASM_dir/zaz_cor
     mkdir -p $ASM_dir/zaz_cor
@@ -24,6 +25,8 @@ asm_compile_you()
 {
 	printf "$COLOR\nCompiling you...\n$END"
 
+    ASM_TEST_COUNT=0
+
     rm 2> /dev/null your_prog_log.txt
     rm -rf $ASM_dir/your_cor
     mkdir -p $ASM_dir/your_cor
@@ -32,6 +35,7 @@ asm_compile_you()
             do
 	            ./$ASM_dir/asm $file >> $ASM_dir/your_asm_log.txt 2>&1
                 printf "$COLOR\0■$END"
+                let "ASM_TEST_COUNT++"
                 # echo $file
             done
     printf "$COLOR\0]$END"
@@ -44,30 +48,26 @@ asm_compile_you()
 asm_make_a_difference()
 {
     rm 2> /dev/null $ASM_dir/diff_log.txt
-    # if [ $(ls | grep your_cor) ]
-    # then
 
 	printf "$COLOR\nWill you make a difference ?\n$END"
 
     diff -bur $ASM_dir/your_cor $ASM_dir/zaz_cor >> $ASM_dir/diff_log.txt
     cat $ASM_dir/diff_log.txt
 
-    # fi
+    local failed=$(cat $ASM_dir/diff_log.txt | wc -l)
+   	printf "$COLOR\n$(expr $ASM_TEST_COUNT - $failed)/$ASM_TEST_COUNT tests passed\n$END"
+
 }
 
 run_asm_tests()
 {
-    # clear
-	# printf "$COLOR\0TN_TEST // COREWAR\n$END"
-	# printf "$COLOR\0ASM DIFF TESTS\n\n$END"
-
     print_title "ASM TESTS"
 
     if [ $(ls | grep asm) ]
 	then
     	printf "$COLOR\0Disclaimer: this script only tests VALID players.\n$END"
 		cp asm $ASM_dir/
-	    # asm_compile_zaz
+	    asm_compile_zaz
         asm_compile_you
         asm_make_a_difference
 	else

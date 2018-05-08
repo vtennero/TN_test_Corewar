@@ -20,6 +20,15 @@ print_start_title()
 	sleep 1
 }
 
+print_usage()
+{
+	printf "$COLOR\0Usage: sh TN_test_Corewar.sh <...>
+    asm         : run asm tests
+    vm          : run vm tests
+    leaks       : run leak tests
+    all/no arg  : run all tests\n$END"
+}
+
 run_animation()
 {
 clear

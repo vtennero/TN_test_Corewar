@@ -45,12 +45,15 @@ outer_parsing_tests()
 	
 	while [ $i -le $N_OUTER_TESTS ]
 	do
+		# printf "$COLOR\0$ERROR_OUTPUT on TEST $i 🔥\n$END" >> $OUTER/TEST[$i].txt &>/dev/null
 		printf "$COLOR\0$ERROR_OUTPUT on TEST $i 🔥\n$END" >> $OUTER/TEST[$i].txt 2>&1
+		# printf "./$VM_dir/corewar ${outer_test[$i]}\n" >> $OUTER/TEST[$i].txt &>/dev/null
 		printf "./$VM_dir/corewar ${outer_test[$i]}\n" >> $OUTER/TEST[$i].txt 2>&1
+		# ./$VM_dir/corewar ${outer_test[$i]} >> $OUTER/TEST[$i].txt &>/dev/null
 		./$VM_dir/corewar ${outer_test[$i]} >> $OUTER/TEST[$i].txt 2>&1
 		pkill corewar
 		# if grep -r "$USAGE_OUTPUT" $OUTER/TEST[$i].txt > /dev/null;
-		if grep -r "$USAGE_OUTPUT" $OUTER/TEST[$i].txt > /dev/null;
+		if grep -r "ERROR" $OUTER/TEST[$i].txt > /dev/null;
 			then
 				printf "$COLOR\0.$END"
 				rm $OUTER/TEST[$i].txt
@@ -131,7 +134,10 @@ run_valid_inputs()
 	while [ $i -le $N_VALID_TESTS ]
 	do
 		# echo ${valid_test[$i]}
-	    ./$VM_dir/corewar ${valid_test[$i]} > $VM_dir/valid_champions/you/your_output_$i 2>&1
+		# cmdpid=$BASHPID; (sleep 10; kill $cmdpid) & exec ping www.goooooogle.com
+		# (sleep 10; pkill corewar) & exec ./$VM_dir/corewar ${valid_test[$i]} > $VM_dir/valid_champions/you/your_output_$i 2>&1
+	    # ./$VM_dir/corewar ${valid_test[$i]} > $VM_dir/valid_champions/you/your_output_$i 2>&1
+	    ./$VM_dir/corewar ${valid_test[$i]} > $VM_dir/valid_champions/you/your_output_$i 2>&1 /& sleep 1; pkill corewar
 	    ./$VM_dir/natapolcorewar ${valid_test[$i]} > $VM_dir/valid_champions/natapol/natapol_output_$i 2>&1
 	    # ./$VM_dir/natapolcorewar ${valid_test[$i]}
 		# diff -u $VM_dir/valid_champions/you/your_output_$i $VM_dir/valid_champions/natapol/natapol_output_$i
@@ -141,6 +147,7 @@ run_valid_inputs()
 		if [ -s $VM_dir/valid_champions/diff/diff_log_$i.txt ]
 		then
 			printf "🔥 "
+			echo ${valid_test[$i]} >> $VM_dir/valid_champions/diff/diff_log_$i.txt
 		else
 			printf "$COLOR.$END"
 			rm $VM_dir/valid_champions/diff/diff_log_$i.txt
@@ -150,13 +157,15 @@ run_valid_inputs()
 
 	# while [ $i -le $N_VALID_TESTS ]
 	# do
-		
+	printf "\n\n"
+	
 	for file in $VM_dir/valid_champions/diff/*;
 	do
 		printf "$COLOR\0ERROR on $END"
 		echo "$COLOR${file##*/}$END 🔥"
 		cat $file
 		read -p "Press enter to continue..."
+		clear
 	done
 
 	read -p "Press enter to continue..."
