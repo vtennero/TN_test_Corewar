@@ -6,12 +6,13 @@ VM_dir=VM_tests
 ERROR_OUTPUT="ERROR"
 USAGE_OUTPUT="Usage:"
 
-source resources/asm_tests.sh
-source resources/vm_tests.sh
-source resources/leaks_tests.sh
+source resources/asm.sh
+source resources/vm.sh
+source resources/leaks.sh
 source resources/assets_interface.sh
 source resources/outer_tests.sh
-source resources/valid_tests.sh
+source resources/num_and_dump_tests.sh
+source resources/battle_tests.sh
 
 run_animation
 print_start_title

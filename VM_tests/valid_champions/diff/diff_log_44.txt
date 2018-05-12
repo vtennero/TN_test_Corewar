@@ -1,0 +1,6 @@
+--- VM_tests/valid_champions/you/your_output_44	2018-05-10 12:08:57.000000000 +0200
++++ VM_tests/valid_champions/natapol/natapol_output_44	2018-05-10 12:08:58.000000000 +0200
+@@ -1 +1 @@
+-Error: File / is too small to be a champion
++Usage: ./corewar [-dump N || -v] [-n N] <champion1.cor> <...>
+

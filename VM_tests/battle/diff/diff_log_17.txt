@@ -1,0 +1,7 @@
+--- VM_tests/battle/you/your_output_17	2018-05-12 18:52:11.000000000 +0200
++++ VM_tests/battle/exec/exec_output_17	2018-05-12 18:52:11.000000000 +0200
+@@ -1 +1 @@
+-Contestant 1, "skynet", has won !
++Contestant 3, "Tching tching(Intercepteur), Bouh!Bouh!(bruits d'anti-jeu)", has won !
+
+Commands to run:./VM_tests/corewar VM_tests/valid_champions/skynet.cor VM_tests/valid_champions/Octobre_Rouge_V4.2.cor VM_tests/valid_champions/Car.cor VM_tests/valid_champions/THUNDER.cor ./VM_tests/corzaz VM_tests/valid_champions/skynet.cor VM_tests/valid_champions/Octobre_Rouge_V4.2.cor VM_tests/valid_champions/Car.cor VM_tests/valid_champions/THUNDER.cor 

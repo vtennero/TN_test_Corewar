@@ -1,0 +1,7 @@
+--- VM_tests/battle/you/your_output_21	2018-05-12 18:52:16.000000000 +0200
++++ VM_tests/battle/exec/exec_output_21	2018-05-12 18:52:16.000000000 +0200
+@@ -1 +1 @@
+-Contestant 1, "skynet", has won !
++Contestant 4, "zork", has won !
+
+Commands to run:./VM_tests/corewar VM_tests/valid_champions/skynet.cor VM_tests/valid_champions/Octobre_Rouge_V4.2.cor VM_tests/valid_champions/Varimathras.cor VM_tests/valid_champions/zork.cor ./VM_tests/corzaz VM_tests/valid_champions/skynet.cor VM_tests/valid_champions/Octobre_Rouge_V4.2.cor VM_tests/valid_champions/Varimathras.cor VM_tests/valid_champions/zork.cor 

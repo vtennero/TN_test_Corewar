@@ -1,0 +1,9 @@
+--- VM_tests/valid_champions/you/your_output_26	2018-05-10 12:08:35.000000000 +0200
++++ VM_tests/valid_champions/natapol/natapol_output_26	2018-05-10 12:08:36.000000000 +0200
+@@ -1 +1,4 @@
+-Error: File / is too small to be a champion
++Introducing contestants...
++* Player 4, weighing 15 bytes, "Tching tching(Intercepteur), Bouh!Bouh!(bruits d'anti-jeu)" ("") !
++* Player 1, weighing 15 bytes, "Tching tching(Intercepteur), Bouh!Bouh!(bruits d'anti-jeu)" ("") !
++Contestant 1, "Tching tching(Intercepteur), Bouh!Bouh!(bruits d'anti-jeu)", has won !
+-dump 2147483647 -n 4 VM_tests/valid_champions/Car.cor -n 1 VM_tests/valid_champions/Car.cor

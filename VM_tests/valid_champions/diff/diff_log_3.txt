@@ -1,5 +1,5 @@
---- VM_tests/valid_champions/you/your_output_3	2018-05-08 19:58:21.000000000 +0200
-+++ VM_tests/valid_champions/natapol/natapol_output_3	2018-05-08 19:58:22.000000000 +0200
+--- VM_tests/valid_champions/you/your_output_3	2018-05-10 12:08:11.000000000 +0200
++++ VM_tests/valid_champions/natapol/natapol_output_3	2018-05-10 12:08:12.000000000 +0200
 @@ -1 +1,66 @@
 -Error: File / is too small to be a champion
 +Introducing contestants...
