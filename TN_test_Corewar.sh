@@ -15,6 +15,7 @@ source resources/outer_tests.sh
 source resources/num_and_dump_tests_dlavaury.sh
 # source resources/num_and_dump_tests.sh
 source resources/battle_tests.sh
+source resources/tools.sh
 
 # run_animation
 print_start_title
@@ -38,6 +39,9 @@ then
 elif [ $1 == "leaks" ] ;
 then
 	run_leaks_tests
+elif [ $1 == "clean" ] ;
+then
+	run_clean_up
 else
 	print_usage
 fi

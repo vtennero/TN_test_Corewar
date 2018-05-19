@@ -26,7 +26,8 @@ print_usage()
     asm         : run asm tests
     vm          : run vm tests
     leaks       : run leak tests
-    all/no arg  : run all tests\n$END"
+    all/no arg  : run all tests
+    clean       : clean your mess\n$END"
 }
 
 run_animation()

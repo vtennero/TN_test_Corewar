@@ -119,7 +119,7 @@ run_invalid_inputs()
 run_num_and_dump()
 {
 	print_title "VM_TESTS"
-	printf "$COLOR\0VALID INPUTS\n\n$END"
+	printf "$COLOR\0NUM AND DUMP VALID INPUTS\n\n$END"
 	
 	local i=1
 	local dir=$VM_dir/num_and_dump
@@ -165,7 +165,7 @@ run_num_and_dump()
 run_battle()
 {
 	print_title "VM_TESTS"
-	printf "$COLOR\0VALID INPUTS\n\n$END"
+	printf "$COLOR\0VALID BATTLES INPUTS\n\n$END"
 	
 	local i=1
 	local dir=$VM_dir/battle

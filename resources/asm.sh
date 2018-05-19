@@ -10,14 +10,14 @@ asm_compile_zaz()
     rm -rf $ASM_dir/zaz_cor
     mkdir -p $ASM_dir/zaz_cor
     printf "$COLOR\0[$END"
-    for file in $ASM_dir/s_files/*.s;
+    for file in $ASM_dir/valid_champs/*.s;
         do
 	        ./$ASM_dir/zaz $file > /dev/null 2>&1
 	        # ./$ASM_dir/zaz $file
             printf "$COLOR\0■$END"
         done
     printf "$COLOR\0]$END"
-    for file in $ASM_dir/s_files/*.cor;
+    for file in $ASM_dir/valid_champs/*.cor;
         do
             mv $file $ASM_dir/zaz_cor/
         done
@@ -33,7 +33,7 @@ asm_compile_you()
     rm -rf $ASM_dir/your_cor
     mkdir -p $ASM_dir/your_cor
     printf "$COLOR\0[$END"
-        for file in $ASM_dir/s_files/*.s;
+        for file in $ASM_dir/valid_champs/*.s;
             do
 	            ./$ASM_dir/asm $file >> $ASM_dir/your_asm_log.txt 2>&1
                 printf "$COLOR\0■$END"
@@ -41,7 +41,7 @@ asm_compile_you()
                 # echo $file
             done
     printf "$COLOR\0]$END"
-        for file in $ASM_dir/s_files/*.cor;
+        for file in $ASM_dir/valid_champs/*.cor;
             do
                 mv $file $ASM_dir/your_cor/
             done
@@ -73,7 +73,6 @@ asm_valid_champs()
     read -p "Press enter to continue..."    
 }
 
-
 asm_invalid_champs()
 {
     print_title "ASM TESTS"
@@ -85,7 +84,7 @@ asm_invalid_champs()
     mkdir $dir
 
     printf "$COLOR\n[$END"
-    for file in $ASM_dir/invalid_champions/*.s;
+    for file in $ASM_dir/invalid_champs/*.s;
         do
 	        ./$ASM_dir/asm $file > /dev/null 2>&1
             printf "$COLOR\0■$END"
@@ -93,7 +92,7 @@ asm_invalid_champs()
         done
     printf "$COLOR]$END\n"
 
-    mv $ASM_dir/invalid_champions/*.cor $dir
+    mv $ASM_dir/invalid_champs/*.cor $dir
     if [ "$(ls -A $dir)" ]; then
         printf "$COLOR\n\n\t<< I never asked for this. >>\n\n\t\t\t\tAdam Jensen\n\n$END"
         ls -1 $dir/*.cor
@@ -101,6 +100,8 @@ asm_invalid_champs()
     else
         printf "$COLOR\n\n\t<< Your ASM is augmented. >>\n\n\t\t\t\tvtennero\n\n$END"
     fi
+
+    read -p "Press enter to continue..."    
 }
 
 run_asm_tests()
@@ -119,5 +120,5 @@ run_asm_tests()
 	else
 		printf "$COLOR\0Move your asm to the current folder, then restart (File must be named asm).\n$END"
 	fi
-	printf "$COLOR\0[ASM TESTS DONE]\n$END"
+	# printf "$COLOR\0[ASM TESTS DONE]\n$END"
 }
