@@ -16,7 +16,7 @@ source resources/num_and_dump_tests_dlavaury.sh
 # source resources/num_and_dump_tests.sh
 source resources/battle_tests.sh
 
-run_animation
+# run_animation
 print_start_title
 
 #MODIFY THE FOLLOWING VARIABLES TO MATCH YOUR OUTPUT FORMAT (FOR GREP PURPOSES)

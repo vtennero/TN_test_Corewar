@@ -160,10 +160,10 @@ run_leaks_tests()
 	if [ $VERSION ]
 	then
 		#COMMENT THE FOLLOWING LINE TO SKIP *ALL* ASM LEAK CHECKS
-		valgrind_asm
+		# valgrind_asm
 
 		#COMMENT THE FOLLOWING LINE TO SKIP *ALL* VM LEAK CHECKS
-		# valgrind_vm
+		valgrind_vm
 	else
 		printf "$COLOR\0Valgrind is not installed on this machine.\n
 		Installing it now...$END"

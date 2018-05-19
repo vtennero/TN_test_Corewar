@@ -58,7 +58,47 @@ asm_make_a_difference()
 
     local failed=$(cat $ASM_dir/diff_log.txt | wc -l)
    	printf "$COLOR\n$(expr $ASM_TEST_COUNT - $failed)/$ASM_TEST_COUNT tests passed\n$END"
+}
 
+asm_valid_champs()
+{
+    print_title "ASM TESTS"
+
+   	printf "\n"
+    asm_compile_zaz
+    asm_compile_you
+    asm_make_a_difference
+
+    read -p "Press enter to continue..."    
+}
+
+
+asm_invalid_champs()
+{
+    print_title "ASM TESTS"
+    
+    local dir=$ASM_dir/your_invalid_cor
+
+    rm -rf 2> /dev/null $dir/
+    mkdir $dir
+
+    printf "$COLOR\n[$END"
+    for file in $ASM_dir/invalid_champions/*.s;
+        do
+	        ./$ASM_dir/asm $file > /dev/null 2>&1
+            printf "$COLOR\0■$END"
+			# echo $file
+        done
+    printf "$COLOR]$END\n"
+
+    mv $ASM_dir/invalid_champions/*.cor $dir
+    if [ "$(ls -A $dir)" ]; then
+        printf "$COLOR\n\n\t<< I never asked for this. >>\n\n\t\t\t\tAdam Jensen\n\n$END"
+        ls -1 $dir/*.cor
+        printf "$COLOR\n(Your ASM should not compile these files...)\n\n$END"
+    else
+        printf "$COLOR\n\n\t<< Your ASM is augmented. >>\n\n\t\t\t\tvtennero\n\n$END"
+    fi
 }
 
 run_asm_tests()
@@ -67,14 +107,15 @@ run_asm_tests()
 
     if [ $(ls | grep asm) ]
 	then
-    	printf "$COLOR\0Disclaimer: this script only tests VALID players.\n$END"
 		cp asm $ASM_dir/
-	    asm_compile_zaz
-        asm_compile_you
-        asm_make_a_difference
+
+        #COMMENT THE FOLLOWING LINE TO SKIP VALID CHAMP CHECKS
+        asm_valid_champs
+
+        #COMMENT THE FOLLOWING LINE TO SKIP INVALID CHAMP CHECKS
+        asm_invalid_champs
 	else
 		printf "$COLOR\0Move your asm to the current folder, then restart (File must be named asm).\n$END"
 	fi
-	printf "$COLOR\0[ASM DIFF TESTS DONE]\n$END"
-    read -p "Press enter to continue..."
+	printf "$COLOR\0[ASM TESTS DONE]\n$END"
 }
