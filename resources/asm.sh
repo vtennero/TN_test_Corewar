@@ -51,7 +51,7 @@ asm_make_a_difference()
 {
     rm 2> /dev/null $ASM_dir/diff_log.txt
 
-	printf "$COLOR\nWill you make a difference ?\n$END"
+	printf "$COLOR\n\nWill you make a difference ?\n\n$END"
 
     diff -bur $ASM_dir/your_cor $ASM_dir/zaz_cor >> $ASM_dir/diff_log.txt
     cat $ASM_dir/diff_log.txt
@@ -97,7 +97,7 @@ asm_invalid_champs()
     if [ "$(ls -A $dir)" ]; then
         printf "$COLOR\n\n\t<< I never asked for this. >>\n\n\t\t\t\tAdam Jensen\n\n$END"
         ls -1 $dir/*.cor
-        printf "$COLOR\n(Your ASM should not compile these files...)\n\n$END"
+        printf "$COLOR\n(Your ASM should not compile these files...That's what ZAZ said)\n\n$END"
     else
         printf "$COLOR\n\n\t<< Your ASM is augmented. >>\n\n\t\t\t\tvtennero\n\n$END"
     fi

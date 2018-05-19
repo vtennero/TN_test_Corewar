@@ -5014,3 +5014,219 @@ Your .cor file(s) was/were successfully created
 Your .cor file(s) was/were successfully created
 Your .cor file(s) was/were successfully created
 Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Error line 144 : Unknow instruction
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Error line 11 : Unknow instruction
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Error line 83 : Unknow instruction
+Your .cor file(s) was/were successfully created
+Error line 1 : Champion's name is already/doesn't set
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Error line 24 : Label used as parameter does not exist
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Error line 1 : Champion's name is already/doesn't set
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Error line 4 : Label used as parameter does not exist
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Error line 212 : Label used as parameter does not exist
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Error line 151 : Label used as parameter does not exist
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Error line 12 : Unknow instruction
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Error line 3 : Unknow instruction
+Error line 3 : Unknow instruction
+Error line 3 : Unknow instruction
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Error line 426 : Invalid number of parameters
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Error line 144 : Unknow instruction
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Error line 11 : Unknow instruction
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Error line 83 : Unknow instruction
+Your .cor file(s) was/were successfully created
+Error line 1 : Champion's name is already/doesn't set
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Error line 24 : Label used as parameter does not exist
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Error line 1 : Champion's name is already/doesn't set
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Error line 4 : Label used as parameter does not exist
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Error line 212 : Label used as parameter does not exist
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Error line 151 : Label used as parameter does not exist
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Error line 12 : Unknow instruction
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Error line 3 : Unknow instruction
+Error line 3 : Unknow instruction
+Error line 3 : Unknow instruction
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Error line 426 : Invalid number of parameters
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Error line 144 : Unknow instruction
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Error line 11 : Unknow instruction
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Error line 83 : Unknow instruction
+Your .cor file(s) was/were successfully created
+Error line 1 : Champion's name is already/doesn't set
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Error line 24 : Label used as parameter does not exist
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Error line 1 : Champion's name is already/doesn't set
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Error line 4 : Label used as parameter does not exist
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Error line 212 : Label used as parameter does not exist
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Error line 151 : Label used as parameter does not exist
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Error line 12 : Unknow instruction
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Error line 3 : Unknow instruction
+Error line 3 : Unknow instruction
+Error line 3 : Unknow instruction
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Error line 426 : Invalid number of parameters
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
+Your .cor file(s) was/were successfully created
