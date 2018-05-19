@@ -63,6 +63,7 @@ asm_make_a_difference()
 asm_valid_champs()
 {
     print_title "ASM TESTS"
+	printf "$COLOR\0VALID CHAMPS\n$END"
 
    	printf "\n"
     asm_compile_zaz
@@ -76,6 +77,7 @@ asm_valid_champs()
 asm_invalid_champs()
 {
     print_title "ASM TESTS"
+	printf "$COLOR\0INVALID CHAMPS\n$END"
     
     local dir=$ASM_dir/your_invalid_cor
 
