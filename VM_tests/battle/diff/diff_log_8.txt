@@ -1,7 +1,0 @@
---- VM_tests/battle/you/your_output_8	2018-05-12 18:51:51.000000000 +0200
-+++ VM_tests/battle/exec/exec_output_8	2018-05-12 18:51:51.000000000 +0200
-@@ -1 +1 @@
--Contestant 2, "Octobre Rouge V4.2", has won !
-+Contestant 1, "Misaka Mikoto", has won !
-
-Commands to run:./VM_tests/corewar VM_tests/valid_champions/Misaka_Mikoto.cor VM_tests/valid_champions/Octobre_Rouge_V4.2.cor./VM_tests/corzaz VM_tests/valid_champions/Misaka_Mikoto.cor VM_tests/valid_champions/Octobre_Rouge_V4.2.cor

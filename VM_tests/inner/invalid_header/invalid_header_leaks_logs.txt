@@ -1,6 +1,0 @@
-VM_tests/inner/invalid_header/invalid_header_1.cor:	48 bytes definitely lost, 0 bytes indirectly lost
-VM_tests/inner/invalid_header/invalid_header_2.cor:	48 bytes definitely lost, 0 bytes indirectly lost
-VM_tests/inner/invalid_header/invalid_header_3.cor:	48 bytes definitely lost, 0 bytes indirectly lost
-VM_tests/inner/invalid_header/invalid_header_4.cor:	48 bytes definitely lost, 0 bytes indirectly lost
-VM_tests/inner/invalid_header/invalid_header_5.cor:	48 bytes definitely lost, 0 bytes indirectly lost
-VM_tests/inner/invalid_header/invalid_header_6.cor:	48 bytes definitely lost, 0 bytes indirectly lost

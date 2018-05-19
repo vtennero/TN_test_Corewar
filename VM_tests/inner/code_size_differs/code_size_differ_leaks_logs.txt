@@ -1,4 +1,0 @@
-VM_tests/inner/code_size_differ/code_size_differ_1.cor:	2,280 bytes definitely lost, 2,230 bytes indirectly lost
-VM_tests/inner/code_size_differ/code_size_differ_2.cor:	2,255 bytes definitely lost, 2,205 bytes indirectly lost
-VM_tests/inner/code_size_differ/code_size_differ_3.cor:	2,281 bytes definitely lost, 2,231 bytes indirectly lost
-VM_tests/inner/code_size_differ/code_size_differ_4.cor:	2,241 bytes definitely lost, 2,191 bytes indirectly lost
